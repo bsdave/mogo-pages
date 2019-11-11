@@ -1,0 +1,133 @@
+.main-block {
+  background-color: #2a2a2a;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  height: calc(100vh - 100px);
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .image {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-link {
+    text-decoration: none;
+    .title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Circe-Bold';
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 1.73px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      z-index: 2;
+      margin: auto;
+      padding-left: 12%;
+      padding-right: 12%;
+    }
+  }
+  .image-box-1 {
+    grid-column: 6/11;
+    grid-row: 1/3;
+  }
+  .image-box-2 {
+    grid-column: 1/6;
+    grid-row: 1/3;
+  }
+  .image-box-3 {
+    grid-column: 1/6;
+    grid-row: 3/5;
+  }
+  .image-box-4 {
+    grid-column: 1/6;
+    grid-row: 5/7;
+  }
+  .image-box-5 {
+    grid-column: 6/11;
+    grid-row: 7/9;
+  }
+  .image-box-6 {
+    grid-column: 6/11;
+    grid-row: 5/7;
+  }
+  .image-box-7 {
+    grid-column: 1/11;
+    grid-row: 9/11;
+  }
+  .image-box-8 {
+    grid-column: 6/11;
+    grid-row: 3/5;
+  }
+  .image-box-9 {
+    grid-column: 1/6;
+    grid-row: 7/9;
+  }
+}
+
+@include desktop {
+  .main-block {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: calc(100vh - 123px);
+
+    .image .img {
+      transition: .5s ease-in-out;
+    }
+
+    .image:hover .img{
+      filter: blur(10px);
+    }
+
+    .image-box-1 {
+      grid-column: 1/5;
+      grid-row: 1/2;
+    }
+    .image-box-2 {
+      grid-column: 5/7;
+      grid-row: 1/3;
+    }
+    .image-box-3 {
+      grid-column: 7/11;
+      grid-row: 1/2;
+    }
+    .image-box-4 {
+      grid-column: 7/11;
+      grid-row: 2/3;
+    }
+    .image-box-5 {
+      grid-column: 1/3;
+      grid-row: 2/4;
+    }
+    .image-box-6 {
+      grid-column: 3/5;
+      grid-row: 2/4;
+    }
+    .image-box-7 {
+      grid-column: 5/7;
+      grid-row: 3/4;
+    }
+    .image-box-8 {
+      grid-column: 7/9;
+      grid-row: 3/4;
+    }
+    .image-box-9 {
+      grid-column: 9/11;
+      grid-row: 3/4;
+    }
+  }
+
+}

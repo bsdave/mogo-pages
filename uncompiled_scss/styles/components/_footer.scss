@@ -1,0 +1,35 @@
+.footer {
+  background: #1E2127;
+  text-align: center;
+  padding: 5px 0;
+  
+  .footer-text {
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0;
+    color: #989FAB;
+    padding: 0;
+  }
+}
+
+@include desktop {
+  .footer {
+    text-align: center;
+    background: #F3F5F6;
+    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    .footer-text {
+      font-family: 'Circe-Regular';
+      font-style: normal;
+      font-size: 15px;
+      line-height: 30px;
+      padding: 0;
+      margin-right: 9px;
+      color: #989FAB;
+    }
+  }
+}

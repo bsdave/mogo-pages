@@ -1,0 +1,30 @@
+$font_rubik-regular: '../fonts/rubik-regular';
+$font_rubik-medium: '../fonts/rubik-medium';
+$font_rubik-bold: '../fonts/rubik-bold';
+
+// Rubik-Regular
+@font-face {
+  font-family: 'Rubik';
+  src: url($font_rubik-regular + '.woff2') format('woff2'), /* Super Modern Browsers */
+  url($font_rubik-regular + '.woff') format('woff'), /* Pretty Modern Browsers */
+  url($font_rubik-regular + '.ttf') format('truetype'), /* Safari, Android, iOS */;
+  font-weight: 400;
+}
+
+// Rubik-Medium
+@font-face {
+  font-family: 'Rubik';
+  src: url($font_rubik-medium + '.woff2') format('woff2'), /* Super Modern Browsers */
+  url($font_rubik-medium + '.woff') format('woff'), /* Pretty Modern Browsers */
+  url($font_rubik-medium + '.ttf') format('truetype'), /* Safari, Android, iOS */;
+  font-weight: 500;
+}
+
+// Rubik-Bold
+@font-face {
+  font-family: 'Rubik';
+  src: url($font_rubik-bold + '.woff2') format('woff2'), /* Super Modern Browsers */
+  url($font_rubik-bold + '.woff') format('woff'), /* Pretty Modern Browsers */
+  url($font_rubik-bold + '.ttf') format('truetype'), /* Safari, Android, iOS */;
+  font-weight: 700;
+}

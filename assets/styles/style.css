@@ -1131,7 +1131,12 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .footer-box .footer-body .footer-list.bordered { border-bottom: 1px solid #383d42; }
 
+.basement-box { background-color: #353a3f; padding: 30px 15px 40px; color: #868e96; font-size: 13px; line-height: 1.54; }
+
+.basement-box .basement-body .key-points .key-point { display: inline-block; margin-bottom: 4px; }
+
 @media (min-width: 992px) { .footer-box { padding: 70px 20px; }
-  .footer-box .footer-body .footer-list.bordered { border-bottom: none; border-right: 1px solid #383d42; } }
+  .footer-box .footer-body .footer-list.bordered { border-bottom: none; border-right: 1px solid #383d42; }
+  .basement-box .basement-head { text-align: center; } }
 
 body { font-family: "Rubik", sans-serif; font-size: 15px; font-size: 13px; }

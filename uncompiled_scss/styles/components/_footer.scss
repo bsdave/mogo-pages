@@ -36,13 +36,32 @@
   }
 }
 
+.basement-box {
+  background-color: #353a3f;
+  padding: 30px 15px 40px;
+  color: #868e96;
+  font-size: 13px;
+  line-height: 1.54;
+
+  .basement-head {
+  }
+
+  .basement-body {
+    .key-points {
+      .key-point {
+        display: inline-block;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+
 @include desktop {
   .footer-box {
     padding: 70px 20px;
-  
+
     .footer-body {
       .footer-list {
-  
         &.bordered {
           border-bottom: none;
           border-right: 1px solid #383d42;
@@ -50,6 +69,10 @@
       }
     }
   }
-}
 
-// background-color:
+  .basement-box {
+    .basement-head {
+      text-align: center;
+    }
+  }
+}

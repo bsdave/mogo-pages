@@ -9,4 +9,32 @@
   text-transform: uppercase;
   color: #fefefe;
   text-decoration: none;
+
+  &.negative {
+    border-radius: 27.5px;
+    border: solid 3px #7ab800;
+    background-color: #ffffff;
+
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.06;
+    color: #7ab800;
+  }
+}
+
+@include desktop {
+  .button {
+    &.mw292 {
+      max-width: 292px;
+    }
+
+    &.negative {
+      transition: 300ms;
+      &:hover {
+        background: #88cc02;
+        border-color: #88cc02;
+        color: white;
+      }
+    }
+  }
 }

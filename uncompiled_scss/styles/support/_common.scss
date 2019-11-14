@@ -212,6 +212,10 @@
   height: 100%;
 }
 
+.horizontal-centered {
+  text-align: center;
+}
+
 @include desktop {
   .common-title {
     font-size: 30px;

@@ -1,0 +1,19 @@
+.advantages-box {
+  margin: 50px 0;
+
+  .advantages-body {
+    .common-title {
+      text-align: left;
+    }
+  }
+}
+
+@include desktop {
+  .advantages-box {
+    margin: 50px 0;
+
+    .advantages-body {
+      background-color: #f1f3f5;
+    }
+  }
+}

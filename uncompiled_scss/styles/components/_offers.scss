@@ -1,0 +1,30 @@
+.offers-box {
+  .offers-body {
+    .title-box {
+
+    }
+
+    .offer {
+      .title {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1.16;
+        color: #353a3f;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .offers-box {
+    .offers-body {
+
+
+      .offer {
+        .title {
+        }
+      }
+    }
+  }
+}

@@ -855,11 +855,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .img-block { display: block; width: 100%; height: auto; }
 
-.title { font-family: "YesevaOne"; font-style: normal; font-weight: normal; font-size: 28px; margin-left: 0; line-height: 35px; margin-top: 0; }
-
-.description { font-family: "Circe-Regular"; color: #FFFFFF; font-size: 18px; line-height: 25px; }
-
-.big-text { font-size: 30px; margin: 0; line-height: 1.07; }
+.big-text { color: white; font-size: 30px; margin: 0; line-height: 1.07; }
 
 .input { width: 100%; font-size: 17px; line-height: 0.94; font-weight: 500; color: #343a40; padding: 10px; border-radius: 7px; outline: none; -webkit-appearance: none; border: none; padding: 14px 19px 16px; margin: 8px 0; }
 
@@ -901,10 +897,17 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .checkbox-body .agreement-link { text-decoration: underline; font-size: 14px; font-weight: normal; color: #4e6ccb; }
 
-@media (min-width: 992px) { .logo { width: 103px; height: 48px; }
-  .title { font-size: 60px; line-height: 70px; margin-left: 92px; margin-top: 0; }
-  .description { font-size: 20px; line-height: 30px; color: #232831; }
-  .button:hover { background: #b40927; }
+.common-title { font-size: 25px; font-weight: 500; line-height: 1.16; color: #003478; }
+
+.description { font-size: 17px; font-weight: normal; line-height: 1.12; color: #353a3f; }
+
+.centered { display: flex; flex-direction: column; justify-content: center; height: 100%; }
+
+@media (min-width: 992px) { .common-title { font-size: 30px; text-align: center; }
+  .description { font-size: 17px; font-weight: normal; line-height: 1.12; color: #353a3f; }
+  .logo { width: 103px; height: 48px; }
+  .button { transition: 300ms; }
+  .button:hover { background: #88cc02; }
   .big-text { font-size: 47px; } }
 
 .slider-box { margin-top: 62px; margin-right: -25px; margin-left: -25px; position: relative; }
@@ -925,7 +928,7 @@ input[type="number"] { -moz-appearance: textfield; }
   .slider-box .counter { display: none; }
   .slider-box .slide-controls .prev-loc, .slider-box .slide-controls .next-loc { content: ""; position: absolute; width: 25px; height: 50px; top: calc(50% - 25px); padding: 30px; } }
 
-.button { display: inline-block; text-align: center; padding: 15px 0; border-radius: 30px; background-color: #7ab800; width: 100%; font-size: 17px; text-transform: uppercase; color: #fefefe; }
+.button { display: inline-block; text-align: center; padding: 15px 0; border-radius: 30px; background-color: #7ab800; width: 100%; font-size: 17px; text-transform: uppercase; color: #fefefe; text-decoration: none; }
 
 .header-box { background: white; }
 
@@ -1081,6 +1084,15 @@ input[type="number"] { -moz-appearance: textfield; }
 
 @media (min-width: 576px) { .change-amount { display: none !important; } }
 
+.offers-box .offers-body .offer .title { font-size: 25px; font-weight: 500; line-height: 1.16; color: #353a3f; text-align: center; }
+
+.advantages-box { margin: 50px 0; }
+
+.advantages-box .advantages-body .common-title { text-align: left; }
+
+@media (min-width: 992px) { .advantages-box { margin: 50px 0; }
+  .advantages-box .advantages-body { background-color: #f1f3f5; } }
+
 .footer { background: #1E2127; text-align: center; padding: 5px 0; }
 
 .footer .footer-text { font-size: 15px; line-height: 30px; letter-spacing: 0; color: #989FAB; padding: 0; }
@@ -1088,4 +1100,4 @@ input[type="number"] { -moz-appearance: textfield; }
 @media (min-width: 992px) { .footer { text-align: center; background: #F3F5F6; position: absolute; right: 0; bottom: 0; left: 0; }
   .footer .footer-text { font-family: 'Circe-Regular'; font-style: normal; font-size: 15px; line-height: 30px; padding: 0; margin-right: 9px; color: #989FAB; } }
 
-body { font-family: 'Rubik', sans-serif; background-color: #232831; color: #FFFFFF; font-size: 15px; font-size: 13px; }
+body { font-family: "Rubik", sans-serif; font-size: 15px; font-size: 13px; }

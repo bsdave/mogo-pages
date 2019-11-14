@@ -63,24 +63,8 @@
   height: auto;
 }
 
-.title {
-  font-family: "YesevaOne";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  margin-left: 0;
-  line-height: 35px;
-  margin-top: 0;
-}
-
-.description {
-  font-family: "Circe-Regular";
-  color: $color-white;
-  font-size: 18px;
-  line-height: 25px;
-}
-
 .big-text {
+  color: white;
   font-size: 30px;
   margin: 0;
   line-height: 1.07;
@@ -207,27 +191,49 @@
   }
 }
 
+.common-title {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.16;
+  color: #003478;
+}
+
+.description {
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.12;
+  color: #353a3f;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
 @include desktop {
+  .common-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.12;
+    color: #353a3f;
+  }
+
   .logo {
     width: 103px;
     height: 48px;
   }
 
-  .title {
-    font-size: 60px;
-    line-height: 70px;
-    margin-left: 92px;
-    margin-top: 0;
-  }
-
-  .description {
-    font-size: 20px;
-    line-height: 30px;
-    color: $color-darkgray;
-  }
   .button {
+    transition: 300ms;
     &:hover {
-      background: #b40927;
+      background: #88cc02;
     }
   }
 

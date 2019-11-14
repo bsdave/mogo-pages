@@ -1,0 +1,147 @@
+.first-screen-box {
+  .first-screen-body {
+    .first-screen-slogan-box {
+      position: relative;
+      z-index: 0;
+      background-image: url("../images/main_first_screen.jpg");
+      background-size: 108%;
+      background-position: 0 -22px;
+      background-repeat: no-repeat;
+
+      .first-screen-slogan-body {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        padding: 25px;
+        height: 190px;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(82, 82, 82, 0.3);
+      }
+    }
+
+    .calculator-box {
+      .calculator-body {
+        background-color: #f1f3f5;
+        padding: 25px;
+
+        .head-link {
+          font-size: 17px;
+          color: #003478;
+          text-transform: uppercase;
+          font-weight: 500;
+          margin: 0;
+
+          a {
+            color: #003478;
+          }
+        }
+      }
+    }
+  }
+
+  .first-screen-footer {
+    background-image: linear-gradient(to top, #7ab800, #96c114);
+    padding: 42px 0 30px;
+
+    .conditions {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      .condition {
+        position: relative;
+        margin-bottom: 25px;
+        font-size: 17px;
+        line-height: 1.12;
+        color: #ffffff;
+        padding-left: 35px;
+
+        &::before {
+          position: absolute;
+          content: '';
+          top: 1px;
+          left: 0;
+
+          height: 19px;
+          width: 24px;
+
+          background-image: url('../images/check.svg');
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .first-screen-box {
+    background-image: url("../images/main_first_screen.jpg");
+    background-size: cover;
+    background-position: 0 -22px;
+    background-repeat: no-repeat;
+
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(46, 46, 46, 0.3);
+    }
+
+    .first-screen-body {
+      position: relative;
+      z-index: 10;
+      .first-screen-slogan-box {
+        position: relative;
+        z-index: 1;
+        background: none;
+        height: 780px;
+
+        .first-screen-slogan-body {
+          position: relative;
+          z-index: 1;
+          display: flex;
+          align-items: center;
+          padding: 25px;
+          height: 100%;
+        }
+
+        &::before {
+          content: none;
+          display: none;
+        }
+      }
+    }
+
+    .calculator-box {
+      position: absolute;
+      z-index: 2;
+      top: 50px;
+      right: 0;
+      left: 50%;
+
+      .calculator-body {
+        border-radius: 15px;
+      }
+    }
+  }
+}

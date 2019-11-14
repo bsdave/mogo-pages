@@ -80,6 +80,133 @@
   line-height: 25px;
 }
 
+.big-text {
+  font-size: 30px;
+  margin: 0;
+  line-height: 1.07;
+}
+
+.input {
+  width: 100%;
+  font-size: 17px;
+  line-height: 0.94;
+  font-weight: 500;
+  color: #343a40;
+  padding: 10px;
+  border-radius: 7px;
+  outline: none;
+  -webkit-appearance: none;
+  border: none;
+  padding: 14px 19px 16px;
+
+  margin: 8px 0;
+
+  &::placeholder {
+    color: #343a40;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  &.money {
+    font-weight: bold;
+  }
+}
+
+.input-with-label {
+  position: relative;
+  width: 100%;
+  margin: 0 10px;
+
+  .label {
+    position: absolute;
+    display: inline-block;
+    color: #adb5bd;
+    font-size: 15px;
+    line-height: 15px;
+
+    top: calc(50% - 15px / 2);
+    right: 10px;
+  }
+
+  .input {
+    padding-right: 40px;
+  }
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+
+  margin: 8px 0;
+}
+
+.checkbox-body {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 12px;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  a {
+    color: #4e6ccb;
+  }
+
+  &:hover .checkbox ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  .checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    &:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    &:checked ~ .checkmark {
+      background-color: #7ab800;
+    }
+  }
+
+  .checkmark {
+    flex: none;
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 9px;
+      top: 6px;
+      width: 7px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+
+  .agreement-link {
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: normal;
+    color: #4e6ccb;
+  }
+}
+
 @include desktop {
   .logo {
     width: 103px;
@@ -102,5 +229,9 @@
     &:hover {
       background: #b40927;
     }
+  }
+
+  .big-text {
+    font-size: 47px;
   }
 }

@@ -29,32 +29,35 @@
   display: flex;
   align-items: center;
   min-height: 40px;
-  padding-left: 35px;
+  padding-left: 15px;
   background-size: 24px 24px;
   background-repeat: no-repeat;
   background-position-y: center;
 
   &.mail {
     background-image: url("../images/email.svg");
+    padding-left: 35px;
   }
 
   &.clock {
     background-image: url("../images/clock.svg");
+    padding-left: 35px;
   }
 
   &.phone {
     background-image: url("../images/phone.svg");
+    padding-left: 35px;
   }
 
   &.cellphone {
     background-image: url("../images/cellphone.svg");
+    padding-left: 35px;
   }
 }
 
 .space-between {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .img-block {

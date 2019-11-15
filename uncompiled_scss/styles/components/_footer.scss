@@ -66,6 +66,14 @@
           border-bottom: none;
           border-right: 1px solid #383d42;
         }
+
+        .recall-link {
+          transition: 300ms;
+
+          &:hover {
+            color: #7ab800;
+          }
+        }
       }
     }
   }

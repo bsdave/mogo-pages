@@ -18,7 +18,6 @@
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
 
-
         &::before {
           border-top-left-radius: 15px;
           border-top-right-radius: 15px;
@@ -44,8 +43,7 @@
         }
 
         .service-title-box {
-        border-radius: 15px;
-          
+          border-radius: 15px;
 
           position: absolute;
           top: 0;
@@ -74,6 +72,41 @@
 
         .button {
           margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .services-box {
+    padding: 50px 0 100px;
+
+    .services-head {
+      margin-bottom: 60px;
+    }
+
+    .services-body {
+
+      .service {
+        position: relative;
+        height: 100%;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+
+        .service-body {
+          padding: 15px 50px 20px;
+        }
+
+        .button {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          
+          margin-right: auto;
+          margin-left: auto;
+          margin-bottom: 40px;
         }
       }
     }

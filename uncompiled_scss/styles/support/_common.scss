@@ -221,7 +221,19 @@
   text-align: center;
 }
 
+.hideable {
+  display: none;
+}
+
 @include desktop {
+  .hideable {
+    display: block !important;
+  }
+
+  .show-more {
+    display: none !important;
+  }
+
   .common-title {
     font-size: 30px;
     text-align: center;

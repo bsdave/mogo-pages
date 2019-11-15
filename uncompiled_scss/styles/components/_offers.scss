@@ -1,16 +1,26 @@
 .offers-box {
+  margin-top: 20px;
+  
   .offers-body {
     .title-box {
-
+      margin-bottom: 60px;
     }
 
     .offer {
+      margin-bottom: 50px;
+      text-align: center;
+
       .title {
         font-size: 25px;
         font-weight: 500;
         line-height: 1.16;
         color: #353a3f;
         text-align: center;
+        margin: 20px 0;
+      }
+
+      .button {
+        max-width: 250px;
       }
     }
   }

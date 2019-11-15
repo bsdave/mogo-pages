@@ -23,4 +23,11 @@ $(function () {
     $(this).css('background', `linear-gradient(90deg, #2b5099, #00979a, #78b801 ${percentage}%, #ced4da ${percentage}%, #ced4da 100%)`);
   });
 
+  $('.show-more').click(function () {
+    $(this).parent().find('.hideable').fadeToggle("fast", "linear");
+    const newText = $(this).data().toggleText;
+    $(this).data().toggleText = $(this).html();
+    $(this).html(newText);
+  });
+
 });

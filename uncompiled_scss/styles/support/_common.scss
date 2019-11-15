@@ -131,12 +131,13 @@
   position: relative;
   display: flex;
   cursor: pointer;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   font-size: 14px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  align-items: center;
   a {
     color: #4e6ccb;
   }
@@ -162,6 +163,7 @@
   }
 
   .checkmark {
+    position: relative;
     flex: none;
     display: block;
     height: 25px;

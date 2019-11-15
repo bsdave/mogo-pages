@@ -106,6 +106,8 @@
   }
 
   .calculator-output {
+    margin-bottom: 20px;
+
     .purpose-amount {
       display: flex;
       justify-content: space-between;
@@ -140,7 +142,7 @@
   }
 
   .client-information-block {
-    // background-color: #e7ebef;
+    margin-bottom: 20px;
   }
 
   .phone-input {

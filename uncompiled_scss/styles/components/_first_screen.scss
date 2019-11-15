@@ -1,4 +1,6 @@
 .first-screen-box {
+  margin-bottom: 60px;
+
   .first-screen-body {
     .first-screen-slogan-box {
       position: relative;
@@ -13,7 +15,6 @@
         z-index: 1;
         display: flex;
         align-items: center;
-        padding: 25px;
         height: 190px;
       }
 
@@ -33,7 +34,7 @@
     .calculator-box {
       .calculator-body {
         background-color: #f1f3f5;
-        padding: 25px;
+        padding: 25px 25px 30px;
 
         .head-link {
           font-size: 17px;
@@ -121,7 +122,6 @@
           z-index: 1;
           display: flex;
           align-items: center;
-          padding: 25px;
           height: 100%;
         }
 

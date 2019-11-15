@@ -9,8 +9,9 @@
   .services-body {
     .service {
       background-color: #ffffff;
-      padding-bottom: 25px;
+      padding-bottom: 35px;
       border-radius: 15px;
+      margin-bottom: 40px;
 
       .service-head {
         position: relative;
@@ -69,7 +70,11 @@
       }
 
       .service-body {
-        padding: 0 35px;
+        padding: 0 20px;
+
+        .button {
+          margin-top: 15px;
+        }
       }
     }
   }

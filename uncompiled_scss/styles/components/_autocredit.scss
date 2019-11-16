@@ -1,0 +1,31 @@
+.autocredit-box {
+  background-color: #f1f3f5;
+  margin-bottom: 30px;
+
+  .autocredit-body {
+    .autocredit-info {
+      padding-bottom: 30px;
+
+      .title {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1.23;
+        color: #003478;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .autocredit-box {
+    .autocredit-body {
+      .autocredit-info {
+        padding-top: 85px;
+
+        .title {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

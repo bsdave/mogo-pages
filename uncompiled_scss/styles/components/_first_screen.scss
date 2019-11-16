@@ -13,6 +13,24 @@
     }
   }
 
+  &.leaseback {
+    margin-bottom: 0;
+
+    .first-screen-body {
+      .first-screen-slogan-box {
+        background-image: url("../images/leaseback_first_screen_mobile.jpg");
+        background-size: 100% auto;
+        background-position: 0 -52px;
+      }
+
+      .calculator-body {
+        .head-link {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+
   .first-screen-body {
     .first-screen-slogan-box {
       position: relative;
@@ -124,6 +142,16 @@
       background-position: calc(55%) 0;
     }
 
+    &.leaseback {
+      background-image: url("../images/leaseback_first_screen_desktop.jpg");
+      background-size: auto 100%;
+      background-position: calc(52%) -127px;
+
+      &::before {
+        background: rgba(46, 46, 46, 0.1);
+      }
+    }
+
     position: relative;
     z-index: 0;
     margin-bottom: 100px;
@@ -167,7 +195,11 @@
           z-index: 2;
           top: 50px;
           right: 0;
-          left: 50%;
+          left: 60%;
+
+          .head-link {
+            font-size: 17px !important;
+          }
 
           .calculator-body {
             border-radius: 15px;
@@ -177,7 +209,7 @@
       }
     }
   }
-  
+
   .conditions {
     padding-right: 53%;
   }

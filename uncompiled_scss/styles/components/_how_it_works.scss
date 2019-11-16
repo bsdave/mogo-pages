@@ -44,31 +44,38 @@
 }
 
 .how-it-work {
-  &.step1 {
+  &.car_logo {
     .step-img {
-      background: url("../images/step1.svg") center no-repeat, linear-gradient(to top, #7ab800, #96c114);
+      background: url("../images/car_logo.svg") center no-repeat, linear-gradient(to top, #7ab800, #96c114);
       background-size: 70%, auto;
     }
   }
 
-  &.step2 {
+  &.target {
     .step-img {
-      background: url("../images/step2.svg") center no-repeat, linear-gradient(to top, #7ab800, #96c114);
+      background: url("../images/target.svg") center no-repeat, linear-gradient(to top, #7ab800, #96c114);
       background-size: 70%, auto;
     }
   }
 
-  &.step3 {
+  &.document {
     .step-img {
-      background: url("../images/step3.svg") center no-repeat, linear-gradient(to top, #7ab800, #96c114);
+      background: url("../images/document.svg") center no-repeat, linear-gradient(to top, #7ab800, #96c114);
       background-size: 70%, auto;
     }
   }
 
-  &.step4 {
+  &.shield {
     .step-img {
-      background: url("../images/step4.svg") center no-repeat, linear-gradient(to top, #7ab800, #96c114);
+      background: url("../images/shield.svg") center no-repeat, linear-gradient(to top, #7ab800, #96c114);
       background-size: 70%, auto;
+    }
+  }
+
+  &.moneyman {
+    .step-img {
+      background: url("../images/moneyman.svg") center no-repeat, linear-gradient(to top, #7ab800, #96c114);
+      background-size: 50%, auto;
     }
   }
 }

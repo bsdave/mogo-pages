@@ -9,6 +9,11 @@
     .offer {
       margin-bottom: 50px;
       text-align: center;
+      position: relative;
+      background: white;
+      padding: 20px;
+      overflow: hidden;
+      border-radius: 15px;
 
       .title {
         font-size: 25px;
@@ -22,6 +27,41 @@
       .button {
         max-width: 250px;
       }
+
+      .details {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+
+        transition: 300ms;
+
+        background-image: linear-gradient(to top, #7ab800, #96c114);
+        border-radius: 12px;
+        padding: 30px 40px 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .title {
+          margin: 0;
+        }
+
+        .title,
+        .description {
+          color: white;
+        }
+      }
+
+      &.show-details {
+        .details {
+          opacity: 1;
+        }
+      }
     }
   }
 }
@@ -34,6 +74,32 @@
       .offer {
         padding: 20px 40px;
         margin-bottom: 0;
+        cursor: default;
+
+        &.show-details {
+          .details {
+            opacity: 0;
+          }
+        }
+
+        &:hover {
+          .details {
+            opacity: 1;
+          }
+        }
+
+        .details {
+          .button {
+            cursor: pointer;
+            border: none;
+            font-weight: 500;
+
+            &:hover {
+              color: #353a3f;
+              background: white;
+            }
+          }
+        }
       }
     }
   }

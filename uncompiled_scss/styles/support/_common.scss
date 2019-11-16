@@ -225,6 +225,10 @@
   display: none;
 }
 
+strong {
+  font-weight: 500;
+}
+
 @include desktop {
   .hideable {
     display: block !important;
@@ -253,6 +257,7 @@
 
   .button {
     transition: 300ms;
+    
     &:hover {
       background: #88cc02;
     }
@@ -260,5 +265,9 @@
 
   .big-text {
     font-size: 47px;
+  }
+
+  .input-with-label {
+    margin: 0;
   }
 }

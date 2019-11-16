@@ -14,6 +14,10 @@ $(function () {
     $('.languages-menu').toggleClass('is-opened');
   });
 
+  $('.offer').click(function () {
+    $(this).toggleClass('show-details');
+  });
+
   $('.range').on('input', function () {
     const min = this.min;
     const max = this.max - min;
@@ -21,6 +25,7 @@ $(function () {
     const percentage = current * 100 / max;
 
     $(this).css('background', `linear-gradient(90deg, #2b5099, #00979a, #78b801 ${percentage}%, #ced4da ${percentage}%, #ced4da 100%)`);
+    $(this).parents('.calculator-block').find('.input.money').val(this.value);
   });
 
   $('.show-more').click(function () {

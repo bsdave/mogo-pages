@@ -37,14 +37,27 @@
         padding: 25px 25px 30px;
 
         .head-link {
+          position: relative;
           font-size: 17px;
           color: #003478;
           text-transform: uppercase;
           font-weight: 500;
           margin: 0;
+          width: max-content;
 
           a {
             color: #003478;
+          }
+
+          &::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            height: 1px;
+            background: #003478;
           }
         }
       }
@@ -90,7 +103,7 @@
   .first-screen-box {
     background-image: url("../images/main_first_screen.jpg");
     background-size: cover;
-    background-position: 0 -22px;
+    background-position: 0 -122px;
     background-repeat: no-repeat;
 
     position: relative;
@@ -143,6 +156,12 @@
             padding: 40px;
           }
         }
+      }
+    }
+
+    .first-screen-footer {
+      .conditions {
+        padding-right: 53%;
       }
     }
   }

@@ -229,7 +229,15 @@ strong {
   font-weight: inherit;
 }
 
+.map {
+  height: 328px;
+}
+
 @include desktop {
+  .map {
+    height: 100%;
+  }
+
   .hideable {
     display: block !important;
   }

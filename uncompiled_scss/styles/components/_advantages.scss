@@ -7,7 +7,7 @@
     }
 
     .advantage {
-      padding: 10px 25px;
+      padding: 10px 25px 30px;
 
       .button {
         margin-top: 35px;
@@ -22,6 +22,14 @@
 
     .advantages-body {
       background-color: #f1f3f5;
+
+      .img-block {
+        height: 100%;
+        width: 100%;
+
+        object-fit: cover;
+        object-position: -1px 0;
+      }
     }
   }
 }

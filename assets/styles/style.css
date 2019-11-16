@@ -911,7 +911,10 @@ strong { font-weight: inherit; }
 
 .map { height: 328px; }
 
-@media (min-width: 992px) { .map { height: 100%; }
+.slogan { display: none; }
+
+@media (min-width: 992px) { .slogan { display: inline-block; font-size: 30px; font-weight: normal; line-height: 1.23; color: #ffffff; margin: 12px 0; }
+  .map { height: 100%; }
   .hideable { display: block !important; }
   .show-more { display: none !important; }
   .common-title { font-size: 30px; text-align: center; }
@@ -1037,9 +1040,13 @@ strong { font-weight: inherit; }
 
 .first-screen-box.leaseback { margin-bottom: 0; }
 
-.first-screen-box.leaseback .first-screen-body .first-screen-slogan-box { background-image: url("../images/leaseback_first_screen_mobile.jpg"); background-size: 100% auto; background-position: 0 -52px; }
+.first-screen-box.leaseback .first-screen-body .first-screen-slogan-box { background-image: url("../images/leaseback_first_screen_mobile.jpg"); background-size: 100% auto; background-position: 0 -40px; }
 
 .first-screen-box.leaseback .first-screen-body .calculator-body .head-link { font-size: 14px !important; }
+
+.first-screen-box.trade-in { margin-bottom: 0; }
+
+.first-screen-box.trade-in .first-screen-body .first-screen-slogan-box { background-image: url("../images/trade_in_first_screen.jpg"); background-size: 130% auto; background-position: -38px -25px; }
 
 .first-screen-box .first-screen-body .first-screen-slogan-box { position: relative; z-index: 0; background-image: url("../images/main_first_screen.jpg"); background-size: 108%; background-position: 0 -22px; background-repeat: no-repeat; }
 
@@ -1067,6 +1074,8 @@ strong { font-weight: inherit; }
   .first-screen-box.autocredit { background-image: url("../images/autocredit_first_screen_desktop.jpg"); background-size: cover; background-position: calc(55%) 0; }
   .first-screen-box.leaseback { background-image: url("../images/leaseback_first_screen_desktop.jpg"); background-size: auto 100%; background-position: calc(52%) -127px; }
   .first-screen-box.leaseback::before { background: rgba(46, 46, 46, 0.1); }
+  .first-screen-box.trade-in { background-image: url("../images/trade_in_first_screen.jpg"); background-size: auto 100%; background-position: calc(52%) -127px; }
+  .first-screen-box.trade-in::before { background: rgba(46, 46, 46, 0.1); }
   .first-screen-box::before { content: ""; display: block; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; background: rgba(46, 46, 46, 0.3); }
   .first-screen-box .first-screen-body { position: relative; z-index: 10; }
   .first-screen-box .first-screen-body .first-screen-slogan-box { position: relative; z-index: 1; background: none !important; height: 780px; }

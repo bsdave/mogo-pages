@@ -20,13 +20,25 @@
       .first-screen-slogan-box {
         background-image: url("../images/leaseback_first_screen_mobile.jpg");
         background-size: 100% auto;
-        background-position: 0 -52px;
+        background-position: 0 -40px;
       }
 
       .calculator-body {
         .head-link {
           font-size: 14px !important;
         }
+      }
+    }
+  }
+
+  &.trade-in {
+    margin-bottom: 0;
+
+    .first-screen-body {
+      .first-screen-slogan-box {
+        background-image: url("../images/trade_in_first_screen.jpg");
+        background-size: 130% auto;
+        background-position: -38px -25px;
       }
     }
   }
@@ -144,6 +156,16 @@
 
     &.leaseback {
       background-image: url("../images/leaseback_first_screen_desktop.jpg");
+      background-size: auto 100%;
+      background-position: calc(52%) -127px;
+
+      &::before {
+        background: rgba(46, 46, 46, 0.1);
+      }
+    }
+
+    &.trade-in {
+      background-image: url("../images/trade_in_first_screen.jpg");
       background-size: auto 100%;
       background-position: calc(52%) -127px;
 

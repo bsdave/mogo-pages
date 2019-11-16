@@ -233,7 +233,20 @@ strong {
   height: 328px;
 }
 
+.slogan {
+  display: none;
+}
+
 @include desktop {
+  .slogan {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.23;
+    color: #ffffff;
+    margin: 12px 0;
+  }
+
   .map {
     height: 100%;
   }

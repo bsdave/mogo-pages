@@ -1278,4 +1278,13 @@ strong { font-weight: inherit; }
 @media (min-width: 992px) { .information-box .information-body .info { box-shadow: -0.2px 5px 21.9px 5.1px rgba(134, 134, 134, 0.15); height: calc(100% - 40px); }
   .information-box .information-body .info .info-head .img-block { border-top-left-radius: 15px; border-top-right-radius: 15px; } }
 
+.page-not-found-box { background-color: #7ab800; padding: 50px 0; }
+
+.page-not-found-box .page-not-found { text-align: center; }
+
+.page-not-found-box .page-not-found .not-found-ttitle { font-size: 25px; font-weight: 500; line-height: 1.13; color: #ffffff; text-transform: uppercase; }
+
+@media (min-width: 992px) { .page-not-found-box { padding: 100px 0; }
+  .page-not-found-box .page-not-found .not-found-ttitle { font-size: 30px; } }
+
 body { font-family: "Rubik", sans-serif; font-size: 15px; font-size: 13px; }

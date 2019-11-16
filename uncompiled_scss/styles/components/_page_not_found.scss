@@ -1,0 +1,27 @@
+.page-not-found-box {
+  background-color: #7ab800;
+  padding: 50px 0;
+
+  .page-not-found {
+    text-align: center;
+    .not-found-ttitle {
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 1.13;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@include desktop {
+  .page-not-found-box {
+    padding: 100px 0;
+
+    .page-not-found {
+      .not-found-ttitle {
+        font-size: 30px;
+      }
+    }
+  }
+}

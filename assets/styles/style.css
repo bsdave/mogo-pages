@@ -931,6 +931,10 @@ strong { font-weight: inherit; }
 
 .show-on-map { display: inline-block; padding-left: 30px; font-size: 16px; color: #353a3f; text-decoration: none; background: url("../images/clock.svg") left center no-repeat; margin-top: 20px; }
 
+.partners-description { display: flex; align-items: center; min-height: 100px; }
+
+.partners-description .description { color: #ffffff; }
+
 @media (min-width: 992px) { .slogan { display: inline-block; font-size: 30px; font-weight: normal; line-height: 1.23; color: #ffffff; margin: 12px 0; }
   .map { height: 100%; }
   .hideable { display: block !important; }
@@ -1089,6 +1093,10 @@ strong { font-weight: inherit; }
 
 .first-screen-box.about-mogo .first-screen-body .first-screen-slogan-box .first-screen-slogan-body { background-image: url("../images/about_company_fs_mobile.jpg"); }
 
+.first-screen-box.partners { margin-bottom: 50px; }
+
+.first-screen-box.partners .first-screen-body .first-screen-slogan-box .first-screen-slogan-body { background-image: url("../images/partners_fs_mobile.jpg"); }
+
 .first-screen-box .first-screen-body .first-screen-slogan-box .first-screen-slogan-body { position: relative; z-index: 1; display: flex; align-items: center; height: 190px; background-image: url("../images/main_first_screen.jpg"); background-size: cover; background-repeat: no-repeat; }
 
 .first-screen-box .first-screen-body .first-screen-slogan-box .first-screen-slogan-body::before { content: ""; display: block; position: absolute; z-index: 0; top: 0; left: 0; right: 0; bottom: 0; background: rgba(82, 82, 82, 0.1); }
@@ -1123,6 +1131,7 @@ strong { font-weight: inherit; }
   .first-screen-box.contacts { margin-bottom: 50px; background-image: url("../images/contacts_fs_desktop.jpg"); }
   .first-screen-box.contacts .first-screen-body .first-screen-slogan-box .calculator-box { top: 120px; }
   .first-screen-box.contacts .first-screen-body .first-screen-slogan-box .calculator-box .calculator-body { padding: 50px 30px; }
+  .first-screen-box.partners { background-image: url("../images/partners_fs_desktop.jpg"); background-position-y: 60%; margin-bottom: 0; }
   .first-screen-box::before { content: ""; display: block; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; background: rgba(46, 46, 46, 0.3); }
   .first-screen-box .first-screen-body { position: relative; z-index: 10; }
   .first-screen-box .first-screen-body .first-screen-slogan-box { position: relative; z-index: 1; height: 780px; }

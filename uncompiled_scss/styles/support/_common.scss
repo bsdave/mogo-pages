@@ -291,6 +291,16 @@ strong {
   margin-top: 20px;
 }
 
+.partners-description {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+
+  .description {
+    color: #ffffff;
+  }
+}
+
 @include desktop {
   .slogan {
     display: inline-block;

@@ -845,11 +845,19 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .with-badge.mail { background-image: url("../images/email.svg"); padding-left: 35px; }
 
+.with-badge.mail.white { background-image: url("../images/email-white.svg"); }
+
 .with-badge.clock { background-image: url("../images/clock.svg"); padding-left: 35px; }
+
+.with-badge.clock.white { background-image: url("../images/clock-white.svg"); }
 
 .with-badge.phone { background-image: url("../images/phone.svg"); padding-left: 35px; }
 
+.with-badge.phone.white { background-image: url("../images/phone-white.svg"); }
+
 .with-badge.cellphone { background-image: url("../images/cellphone.svg"); padding-left: 35px; }
+
+.with-badge.cellphone.white { background-image: url("../images/cellphone-white.svg"); }
 
 .space-between { display: flex; align-items: center; }
 
@@ -921,6 +929,8 @@ strong { font-weight: inherit; }
 
 .about-mogo-text .description { color: #ffffff; margin: 0 0 10px; }
 
+.show-on-map { display: inline-block; padding-left: 30px; font-size: 16px; color: #353a3f; text-decoration: none; background: url("../images/clock.svg") left center no-repeat; margin-top: 20px; }
+
 @media (min-width: 992px) { .slogan { display: inline-block; font-size: 30px; font-weight: normal; line-height: 1.23; color: #ffffff; margin: 12px 0; }
   .map { height: 100%; }
   .hideable { display: block !important; }
@@ -961,6 +971,12 @@ strong { font-weight: inherit; }
   .button.negative { transition: 300ms; }
   .button.negative:hover { background: #88cc02; border-color: #88cc02; color: white; }
   .button.empty:hover { border: solid 3px #ffffff; background-color: white; color: #88cc02; } }
+
+.description-list { display: flex; flex-wrap: wrap; margin-top: 30px; margin-bottom: 0; }
+
+.description-list dt, .description-list dd { flex-basis: 50%; margin: 0 0 15px; font-size: 17px; font-weight: bold; line-height: 1.12; color: #353a3f; }
+
+.description-list dd { font-weight: normal; }
 
 .header-box { background: white; }
 
@@ -1063,6 +1079,12 @@ strong { font-weight: inherit; }
 
 .first-screen-box.thank-you .first-screen-body .first-screen-slogan-box .first-screen-slogan-body { background-image: url("../images/thankyou_fs_mobile.jpg"); }
 
+.first-screen-box.contacts .first-screen-footer { padding: 20px 0; }
+
+.first-screen-box.contacts .first-screen-footer .with-badge { font-weight: bold; }
+
+.first-screen-box.contacts .first-screen-body .first-screen-slogan-box .first-screen-slogan-body { background-image: url("../images/contacts_fs_mobile.jpg"); }
+
 .first-screen-box.about-mogo { margin-bottom: 50px; }
 
 .first-screen-box.about-mogo .first-screen-body .first-screen-slogan-box .first-screen-slogan-body { background-image: url("../images/about_company_fs_mobile.jpg"); }
@@ -1098,6 +1120,9 @@ strong { font-weight: inherit; }
   .first-screen-box.slim .first-screen-body .first-screen-slogan-box { height: 300px; }
   .first-screen-box.about-mogo { background-image: url("../images/about_company_fs_desktop.jpg"); background-position-y: 60%; margin-bottom: 0; }
   .first-screen-box.thank-you { background-image: url("../images/thankyou_fs_desktop.jpg"); }
+  .first-screen-box.contacts { margin-bottom: 50px; background-image: url("../images/contacts_fs_desktop.jpg"); }
+  .first-screen-box.contacts .first-screen-body .first-screen-slogan-box .calculator-box { top: 120px; }
+  .first-screen-box.contacts .first-screen-body .first-screen-slogan-box .calculator-box .calculator-body { padding: 50px 30px; }
   .first-screen-box::before { content: ""; display: block; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; background: rgba(46, 46, 46, 0.3); }
   .first-screen-box .first-screen-body { position: relative; z-index: 10; }
   .first-screen-box .first-screen-body .first-screen-slogan-box { position: relative; z-index: 1; height: 780px; }
@@ -1223,15 +1248,13 @@ strong { font-weight: inherit; }
 
 .footer-box { background-color: #222529; padding: 40px 20px; }
 
-.footer-box .footer-body .footer-list { list-style: none; margin: 0; padding: 10px 0 0; height: 100%; }
+.footer-list { list-style: none; margin: 0; padding: 10px 0 0; height: 100%; }
 
-.footer-box .footer-body .footer-list .list-item { margin-bottom: 15px; font-size: 17px; color: white; font-weight: normal; }
+.footer-list .list-item { margin-bottom: 15px; font-size: 17px; color: white; font-weight: normal; }
 
-.footer-box .footer-body .footer-list .list-item a { display: block; color: white; text-decoration: none; font-weight: normal; }
+.footer-list .list-item a { display: block; color: white; text-decoration: none; font-weight: normal; }
 
-.footer-box .footer-body .footer-list .list-item a .small-text { font-size: 9px; margin-left: 10px; }
-
-.footer-box .footer-body .footer-list.bordered { border-bottom: 1px solid #383d42; }
+.footer-list .list-item a .small-text { font-size: 9px; margin-left: 10px; }
 
 .basement-box { background-color: #353a3f; padding: 30px 15px 40px; color: #868e96; font-size: 13px; line-height: 1.54; }
 
@@ -1362,5 +1385,27 @@ strong { font-weight: inherit; }
   .benefits-box .benefits-body .benefits .benefit .conditions { padding-right: 0; margin-top: 40px; padding-right: 20%; }
   .benefits-box .benefits-body .benefits .benefit .conditions .condition { color: #353a3f; }
   .benefits-box .benefits-body .benefits .benefit .conditions .condition::before { position: absolute; content: ""; top: calc((100% - 19px) / 2); left: 0; height: 19px; width: 24px; background-image: url("../images/check_green.svg"); background-position: center; background-repeat: no-repeat; } }
+
+.map-points-box { margin-bottom: 50px; }
+
+.map-points-box .map-points-head { margin-bottom: 30px; }
+
+.map-points-box .map-points-body .map { margin-bottom: 30px; }
+
+.map-points-box .map-points-body .points { margin-bottom: 50px; }
+
+.map-points-box .map-points-body .points .point { padding: 30px; background: #f1f3f5; border-radius: 15px; }
+
+.map-points-box .map-points-body .points .point .title { font-size: 17px; line-height: 1.12; color: #353a3f; margin: 0; }
+
+.map-points-box .map-points-body .points .point .description { font-size: 16px; }
+
+.map-points-box .map-points-body .points .point:not(:last-child) { margin-bottom: 20px; }
+
+@media (min-width: 992px) { .map-points-box .map-points-head { margin-top: 80px; margin-bottom: 50px; }
+  .map-points-box .map-points-head .common-title { text-align: left; }
+  .map-points-box .map-points-body .map { height: 750px; }
+  .map-points-box .map-points-body .points { height: 750px; overflow-y: scroll; }
+  .map-points-box .map-points-body .points .point { padding: 20px; background: #f1f3f5; } }
 
 body { font-family: "Rubik", sans-serif; font-size: 15px; font-size: 13px; }

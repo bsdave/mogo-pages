@@ -1,0 +1,64 @@
+.map-points-box {
+  margin-bottom: 50px;
+
+  .map-points-head {
+    margin-bottom: 30px;
+  }
+  .map-points-body {
+    .map {
+      margin-bottom: 30px;
+    }
+
+    .points {
+      margin-bottom: 50px;
+
+      .point {
+        padding: 30px;
+        background: #f1f3f5;
+        border-radius: 15px;
+
+        .title {
+          font-size: 17px;
+          line-height: 1.12;
+          color: #353a3f;
+          margin: 0;
+        }
+
+        .description {
+          font-size: 16px;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .map-points-box {
+    .map-points-head {
+      margin-top: 80px;
+      margin-bottom: 50px;
+      .common-title {
+        text-align: left;
+      }
+    }
+    .map-points-body {
+      .map {
+        height: 750px;
+      }
+
+      .points {
+        height: 750px;
+        overflow-y: scroll;
+
+        .point {
+          padding: 20px;
+          background: #f1f3f5;
+        }
+      }
+    }
+  }
+}

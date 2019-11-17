@@ -37,21 +37,37 @@
   &.mail {
     background-image: url("../images/email.svg");
     padding-left: 35px;
+
+    &.white {
+      background-image: url("../images/email-white.svg");
+    }
   }
 
   &.clock {
     background-image: url("../images/clock.svg");
     padding-left: 35px;
+
+    &.white {
+      background-image: url("../images/clock-white.svg");
+    }
   }
 
   &.phone {
     background-image: url("../images/phone.svg");
     padding-left: 35px;
+
+    &.white {
+      background-image: url("../images/phone-white.svg");
+    }
   }
 
   &.cellphone {
     background-image: url("../images/cellphone.svg");
     padding-left: 35px;
+
+    &.white {
+      background-image: url("../images/cellphone-white.svg");
+    }
   }
 }
 
@@ -261,6 +277,18 @@ strong {
     color: #ffffff;
     margin: 0 0 10px;
   }
+}
+
+.show-on-map {
+  display: inline-block;
+  padding-left: 30px;
+
+  font-size: 16px;
+  color: #353a3f;
+  text-decoration: none;
+
+  background: url("../images/clock.svg") left center no-repeat;
+  margin-top: 20px;
 }
 
 @include desktop {

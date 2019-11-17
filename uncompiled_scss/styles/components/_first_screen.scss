@@ -53,9 +53,26 @@
     }
   }
 
+  &.contacts {
+    .first-screen-footer {
+      padding: 20px 0;
+
+      .with-badge {
+        font-weight: bold;
+      }
+    }
+    .first-screen-body {
+      .first-screen-slogan-box {
+        .first-screen-slogan-body {
+          background-image: url("../images/contacts_fs_mobile.jpg");
+        }
+      }
+    }
+  }
+
   &.about-mogo {
     margin-bottom: 50px;
-    
+
     .first-screen-body {
       .first-screen-slogan-box {
         .first-screen-slogan-body {
@@ -216,6 +233,19 @@
       background-image: url("../images/thankyou_fs_desktop.jpg");
     }
 
+    &.contacts {
+      margin-bottom: 50px;
+      background-image: url("../images/contacts_fs_desktop.jpg");
+
+      .first-screen-body .first-screen-slogan-box .calculator-box {
+        top: 120px;
+
+        .calculator-body {
+          padding: 50px 30px;
+        }
+      }
+    }
+
     position: relative;
     z-index: 0;
     margin-bottom: 100px;
@@ -251,7 +281,7 @@
 
           &::before {
             content: none;
-          } 
+          }
         }
 
         &::before {

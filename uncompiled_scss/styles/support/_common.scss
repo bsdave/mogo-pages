@@ -256,6 +256,13 @@ strong {
   display: none;
 }
 
+.about-mogo-text {
+  .description {
+    color: #ffffff;
+    margin: 0 0 10px;
+  }
+}
+
 @include desktop {
   .slogan {
     display: inline-block;
@@ -297,7 +304,7 @@ strong {
 
   .button {
     transition: 300ms;
-    
+
     &:hover {
       background: #88cc02;
     }

@@ -53,6 +53,18 @@
     }
   }
 
+  &.about-mogo {
+    margin-bottom: 50px;
+    
+    .first-screen-body {
+      .first-screen-slogan-box {
+        .first-screen-slogan-body {
+          background-image: url("../images/about_company_fs_mobile.jpg");
+        }
+      }
+    }
+  }
+
   .first-screen-body {
     .first-screen-slogan-box {
       .first-screen-slogan-body {
@@ -192,6 +204,12 @@
           height: 300px;
         }
       }
+    }
+
+    &.about-mogo {
+      background-image: url("../images/about_company_fs_desktop.jpg");
+      background-position-y: 60%;
+      margin-bottom: 0;
     }
 
     &.thank-you {

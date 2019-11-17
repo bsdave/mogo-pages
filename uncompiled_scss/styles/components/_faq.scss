@@ -1,0 +1,123 @@
+.faq-sections-box {
+  .title {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.16;
+    color: #ffffff;
+    margin-top: 0;
+  }
+
+  .sections {
+    .section {
+      display: inline-block;
+      padding: 27px;
+      color: white;
+      border-radius: 39.5px;
+      border: solid 3px #ffffff;
+      background-color: #7ab800;
+      text-transform: uppercase;
+
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.12;
+      text-align: center;
+      text-decoration: none;
+
+      width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.questions-box {
+  margin-bottom: 50px;
+
+  .questions {
+    .question {
+      background: #f1f3f5;
+      padding: 30px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+
+      .title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.28;
+        color: #343a40;
+        margin-top: 0;
+      }
+
+      .label {
+        text-transform: uppercase;
+        color: white;
+        background: #526ec6;
+        padding: 7px 10px;
+        border-radius: 8px;
+      }
+
+      .answer-link {
+        position: relative;
+        display: inline-block;
+        height: 44px;
+        width: 44px;
+
+        border-radius: 50%;
+        border: 2px solid #343a40;
+
+        &::after {
+          position: absolute;
+          top: 10px;
+          left: 16px;
+
+          content: ">";
+          font-size: 18px;
+          font-weight: 500;
+          color: #343a40;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .faq-sections-box {
+    .sections {
+      display: flex;
+      justify-content: space-evenly;
+
+      .section {
+        flex-basis: 25%;
+        transition: 300ms;
+
+        &:hover {
+          color: #7ab800;
+          border: solid 3px #7ab800;
+          background-color: white;
+        }
+      }
+    }
+  }
+
+  .questions-box {
+    margin-bottom: 50px;
+
+    .questions {
+      .question {
+
+        .answer-link {
+          transition: 300ms;
+
+          &:hover {
+            background: #526ec6;
+            color: white;
+            border-color: #526ec6;
+
+            &::after {
+              color: white;
+            } 
+          }
+        }
+      }
+    }
+  }
+}

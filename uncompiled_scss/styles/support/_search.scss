@@ -1,0 +1,37 @@
+.search-form {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  margin-top: 15px;
+
+  form {
+    height: 100%;
+  }
+
+  .search-input {
+    display: block;
+    width: 100%;
+
+    padding: 15px 20px;
+    border-radius: 7px;
+    background: url("../images/magnifier.svg") 96% center no-repeat, white;
+    background-size: 20px;
+    border: none;
+
+    font-size: 17px;
+    line-height: 1.12;
+    color: #343a40;
+
+    &::placeholder {
+      font-size: 17px;
+      line-height: 1.12;
+      color: #adb5bd;
+    }
+  }
+}
+
+@include desktop {
+  .search-form {
+    margin-top: 0;
+  }
+}

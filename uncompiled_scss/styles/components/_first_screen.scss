@@ -94,6 +94,23 @@
     }
   }
 
+  &.faq {
+    margin-bottom: 50px;
+
+    .first-screen-body {
+      .first-screen-slogan-box {
+        .first-screen-slogan-body {
+          background-image: url("../images/faq_fs_mobile.jpg");
+          background-position-y: 88%;
+
+          &::before {
+            background: rgba(82, 82, 82, 0.4);
+          }
+        }
+      }
+    }
+  }
+
   .first-screen-body {
     .first-screen-slogan-box {
       .first-screen-slogan-body {
@@ -262,6 +279,11 @@
       background-image: url("../images/partners_fs_desktop.jpg");
       background-position-y: 60%;
       margin-bottom: 0;
+    }
+
+    &.faq {
+      background-image: url("../images/faq_fs_desktop.jpg");
+      background-position: 0 -230px;
     }
 
     position: relative;

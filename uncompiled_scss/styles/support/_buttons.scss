@@ -10,6 +10,7 @@
   color: #fefefe;
   text-decoration: none;
 
+  &.empty,
   &.negative {
     border-radius: 27.5px;
     border: solid 3px #7ab800;
@@ -19,6 +20,12 @@
     font-weight: 500;
     line-height: 1.06;
     color: #7ab800;
+  }
+
+  &.empty {
+    border: solid 3px #ffffff;
+    background-color: transparent;
+    color: #ffffff;
   }
 }
 
@@ -34,6 +41,14 @@
         background: #88cc02;
         border-color: #88cc02;
         color: white;
+      }
+    }
+
+    &.empty {
+      &:hover {
+        border: solid 3px #ffffff;
+        background-color: white;
+        color: #88cc02;
       }
     }
   }

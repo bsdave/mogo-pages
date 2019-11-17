@@ -1,0 +1,45 @@
+.accepted-box {
+  position: relative;
+  padding: 40px 0 55px;
+
+  .check-ok {
+    position: absolute;
+    z-index: 1;
+    top: calc(-92px / 2);
+    left: calc(50% - 92px / 2);
+    content: "";
+    display: inline-block;
+    height: 92px;
+    width: 92px;
+    border-radius: 50%;
+
+    background: url(../images/check.svg) center no-repeat, #96c114;
+    background-size: 60%, auto;
+  }
+
+  .title {
+    font-size: 25px;
+    line-height: 1.16;
+    color: #ffffff;
+  }
+
+  .description {
+    font-size: 17px;
+    line-height: 1.12;
+    color: #ffffff;
+  }
+
+  .horizontal-centered {
+    margin-top: 40px;
+  }
+}
+
+@include desktop {
+  .accepted-box {
+    .title {
+      font-size: 47px;
+    }
+  }
+
+  
+}

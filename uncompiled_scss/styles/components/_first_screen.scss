@@ -38,6 +38,21 @@
     }
   }
 
+  &.thank-you {
+    margin-bottom: 0;
+    .first-screen-footer {
+      padding: 0;
+    }
+
+    .first-screen-body {
+      .first-screen-slogan-box {
+        .first-screen-slogan-body {
+          background-image: url("../images/thankyou_fs_mobile.jpg");
+        }
+      }
+    }
+  }
+
   .first-screen-body {
     .first-screen-slogan-box {
       .first-screen-slogan-body {
@@ -169,6 +184,18 @@
       &::before {
         background: rgba(46, 46, 46, 0.1);
       }
+    }
+
+    &.slim {
+      .first-screen-body {
+        .first-screen-slogan-box {
+          height: 300px;
+        }
+      }
+    }
+
+    &.thank-you {
+      background-image: url("../images/thankyou_fs_desktop.jpg");
     }
 
     position: relative;

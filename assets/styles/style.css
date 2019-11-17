@@ -879,7 +879,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .input-group { display: flex; align-items: center; margin: 8px 0; }
 
-.checkbox-body { position: relative; display: flex; cursor: pointer; margin-bottom: 20px; font-size: 14px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; align-items: center; }
+.checkbox-body { position: relative; display: flex; cursor: pointer; font-size: 14px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; align-items: center; }
 
 .checkbox-body a { color: #4e6ccb; }
 
@@ -903,7 +903,13 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .centered { display: flex; flex-direction: column; justify-content: center; height: 100%; }
 
-.horizontal-centered { text-align: center; }
+.justify-opposit { display: flex; justify-content: space-between; align-items: center; }
+
+.open-modal.agreement { display: inline-block; width: 30px; font-size: 17px; line-height: 17px; padding-bottom: 5px; cursor: pointer; }
+
+.horizontal-centered { text-align: center; padding: 0 25px; }
+
+.checkbox-box { margin-bottom: 20px; }
 
 .hideable { display: none; }
 
@@ -1036,27 +1042,25 @@ strong { font-weight: inherit; }
 
 .first-screen-box.autocredit { margin-bottom: 0; }
 
-.first-screen-box.autocredit .first-screen-body .first-screen-slogan-box { background-image: url("../images/autocredit_first_screen_mobile.jpg"); background-size: 105% auto; background-position: 0 -22px; }
+.first-screen-box.autocredit .first-screen-body .first-screen-slogan-box .first-screen-slogan-body { background-image: url("../images/autocredit_first_screen_mobile.jpg"); background-size: calc(100% + 8px); background-position: 2px -18px; }
 
 .first-screen-box.leaseback { margin-bottom: 0; }
 
-.first-screen-box.leaseback .first-screen-body .first-screen-slogan-box { background-image: url("../images/leaseback_first_screen_mobile.jpg"); background-size: 100% auto; background-position: 0 -40px; }
-
-.first-screen-box.leaseback .first-screen-body .calculator-body .head-link { font-size: 14px !important; }
+.first-screen-box.leaseback .first-screen-body .first-screen-slogan-box .first-screen-slogan-body { background-image: url("../images/leaseback_first_screen_mobile.jpg"); background-position-y: 40%; }
 
 .first-screen-box.trade-in { margin-bottom: 0; }
 
-.first-screen-box.trade-in .first-screen-body .first-screen-slogan-box { background-image: url("../images/trade_in_first_screen.jpg"); background-size: 130% auto; background-position: -38px -25px; }
+.first-screen-box.trade-in .first-screen-body .first-screen-slogan-box .first-screen-slogan-body { background-image: url("../images/trade_in_first_screen.jpg"); background-size: 120%; }
 
-.first-screen-box .first-screen-body .first-screen-slogan-box { position: relative; z-index: 0; background-image: url("../images/main_first_screen.jpg"); background-size: 108%; background-position: 0 -22px; background-repeat: no-repeat; }
+.first-screen-box .first-screen-body .first-screen-slogan-box .first-screen-slogan-body { position: relative; z-index: 1; display: flex; align-items: center; height: 190px; background-image: url("../images/main_first_screen.jpg"); background-size: cover; background-repeat: no-repeat; }
 
-.first-screen-box .first-screen-body .first-screen-slogan-box .first-screen-slogan-body { position: relative; z-index: 1; display: flex; align-items: center; height: 190px; }
+.first-screen-box .first-screen-body .first-screen-slogan-box .first-screen-slogan-body::before { content: ""; display: block; position: absolute; z-index: 0; top: 0; left: 0; right: 0; bottom: 0; background: rgba(82, 82, 82, 0.1); }
 
-.first-screen-box .first-screen-body .first-screen-slogan-box::before { content: ""; display: block; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; background: rgba(82, 82, 82, 0.3); }
+.first-screen-box .first-screen-body .first-screen-slogan-box .first-screen-slogan-body .big-text { position: relative; z-index: 1; }
 
 .first-screen-box .first-screen-body .calculator-box .calculator-body { background-color: #f1f3f5; padding: 25px 25px 30px; }
 
-.first-screen-box .first-screen-body .calculator-box .calculator-body .head-link { position: relative; font-size: 17px; color: #003478; text-transform: uppercase; font-weight: 500; margin: 0; width: -webkit-max-content; width: -moz-max-content; width: max-content; }
+.first-screen-box .first-screen-body .calculator-box .calculator-body .head-link { position: relative; font-size: 3.5vw; color: #003478; text-transform: uppercase; font-weight: 500; margin: 0; width: -webkit-max-content; width: -moz-max-content; width: max-content; }
 
 .first-screen-box .first-screen-body .calculator-box .calculator-body .head-link a { color: #003478; }
 
@@ -1078,8 +1082,9 @@ strong { font-weight: inherit; }
   .first-screen-box.trade-in::before { background: rgba(46, 46, 46, 0.1); }
   .first-screen-box::before { content: ""; display: block; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; background: rgba(46, 46, 46, 0.3); }
   .first-screen-box .first-screen-body { position: relative; z-index: 10; }
-  .first-screen-box .first-screen-body .first-screen-slogan-box { position: relative; z-index: 1; background: none !important; height: 780px; }
-  .first-screen-box .first-screen-body .first-screen-slogan-box .first-screen-slogan-body { position: relative; z-index: 1; display: flex; align-items: center; height: 100%; }
+  .first-screen-box .first-screen-body .first-screen-slogan-box { position: relative; z-index: 1; height: 780px; }
+  .first-screen-box .first-screen-body .first-screen-slogan-box .first-screen-slogan-body { position: relative; z-index: 1; display: flex; align-items: center; height: 100%; background: none !important; }
+  .first-screen-box .first-screen-body .first-screen-slogan-box .first-screen-slogan-body::before { content: none; }
   .first-screen-box .first-screen-body .first-screen-slogan-box::before { content: none; display: none; }
   .first-screen-box .first-screen-body .first-screen-slogan-box .calculator-box { position: absolute; z-index: 2; top: 50px; right: 0; left: 60%; }
   .first-screen-box .first-screen-body .first-screen-slogan-box .calculator-box .head-link { font-size: 17px !important; }
@@ -1286,5 +1291,23 @@ strong { font-weight: inherit; }
 
 @media (min-width: 992px) { .page-not-found-box { padding: 100px 0; }
   .page-not-found-box .page-not-found .not-found-ttitle { font-size: 30px; } }
+
+.modal-box { position: fixed; top: 0; bottom: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: center; z-index: -1; opacity: 0; }
+
+.modal-box::before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: rgba(56, 56, 56, 0.56); }
+
+.modal-box.opened { z-index: 1000; opacity: 1; }
+
+.modal-box .modal { position: relative; z-index: 9999; background-color: #f1f3f5; height: 100%; }
+
+.modal-box .modal .modal-head { position: relative; padding: 20px; background: #7ab800; height: 97px; }
+
+.modal-box .modal .modal-head .title { font-size: 25px; line-height: 2.28; color: #ffffff; margin: 0; }
+
+.modal-box .modal .modal-head .close-modal { position: absolute; top: -2px; right: 25px; width: 65px; height: 63px; border: 2px solid white; border-bottom-left-radius: 50%; border-bottom-right-radius: 50%; background: url("../images/close.svg") center no-repeat, transparent; background-size: 40%; }
+
+.modal-box .modal .modal-body { padding: 30px 20px; font-size: 17px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: 1.12; letter-spacing: normal; text-align: left; color: #343a40; overflow: scroll; height: calc(100% - 97px); }
+
+@media (min-width: 992px) { .modal-box .modal { box-shadow: 0px 38px 95.6px 35.4px rgba(64, 60, 60, 0.39); max-width: 720px; height: auto; max-height: 500px; border-radius: 10px; overflow: hidden; } }
 
 body { font-family: "Rubik", sans-serif; font-size: 15px; font-size: 13px; }

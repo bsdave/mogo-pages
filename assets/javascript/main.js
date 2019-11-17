@@ -26,6 +26,10 @@ $(function () {
     $(`#${$(this).data().modalId}`).toggleClass('opened');
   });
 
+  $('.answer-head').click(function () {
+    $(this).parents('.answer').toggleClass('opened');
+  });
+
   $('.range').on('input', function () {
     const min = this.min;
     const max = this.max - min;

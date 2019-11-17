@@ -17,7 +17,7 @@ $(function () {
   $('.offer').click(function () {
     $(this).toggleClass('show-details');
   });
-  
+
   $('.close-modal').click(function () {
     $(this).parents('.modal-box').toggleClass('opened');
   });
@@ -28,6 +28,23 @@ $(function () {
 
   $('.answer-head').click(function () {
     $(this).parents('.answer').toggleClass('opened');
+  });
+
+  $('.carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   });
 
   $('.range').on('input', function () {

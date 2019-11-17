@@ -111,6 +111,27 @@
     }
   }
 
+  &.dealers-apply {
+    margin-bottom: 50px;
+
+    .first-screen-body {
+      .first-screen-slogan-box {
+        .first-screen-slogan-body {
+          background-image: url("../images/dealers_apply_fs_mobile.jpg");
+          background-position-y: 35%;
+
+          &::before {
+            background: rgba(82, 82, 82, 0.4);
+          }
+        }
+      }
+
+      .head-link {
+        margin-bottom: 20px !important;
+      }
+    }
+  } 
+
   .first-screen-body {
     .first-screen-slogan-box {
       .first-screen-slogan-body {
@@ -284,6 +305,14 @@
     &.faq {
       background-image: url("../images/faq_fs_desktop.jpg");
       background-position: 0 -230px;
+    }
+
+    &.dealers-apply {
+      background-image: url("../images/dealers_apply_fs_desktop.jpg");
+
+      .calculator-box {
+        top: 150px !important;
+      }
     }
 
     position: relative;

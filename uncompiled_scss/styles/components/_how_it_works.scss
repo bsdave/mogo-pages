@@ -44,7 +44,7 @@
 }
 
 .how-it-work {
-  &.car_logo {
+  &.car-logo {
     .step-img {
       background: url("../images/car_logo.svg") center no-repeat, linear-gradient(to top, #7ab800, #96c114);
       background-size: 70%, auto;
@@ -76,6 +76,14 @@
     .step-img {
       background: url("../images/moneyman.svg") center no-repeat, linear-gradient(to top, #7ab800, #96c114);
       background-size: 50%, auto;
+    }
+  }
+
+  &.handshake {
+    .step-img {
+      background: url("../images/handshake.svg") center no-repeat, linear-gradient(to top, #7ab800, #96c114);
+      background-size: 55%, auto;
+      background-position-y: 55%;
     }
   }
 }

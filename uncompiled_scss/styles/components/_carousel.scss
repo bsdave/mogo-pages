@@ -1,0 +1,92 @@
+.carousel-box {
+  .carousel {
+    background-color: #f1f3f5;
+
+    .step-box {
+      .step {
+        position: relative;
+
+        .step-left {
+          .img-block {
+            height: 190px;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .step-right {
+          padding: 20px 10% 40px;
+        }
+      }
+    }
+
+    .slick-dots {
+      position: absolute;
+      top: 198px !important;
+      height: 25px;
+
+      button {
+        background-color: white;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .carousel-box {
+    margin-bottom: 100px;
+
+    .carousel {
+      background-color: #f1f3f5;
+
+      .step-box {
+        .step {
+          .step-left {
+            .img-block {
+              height: 247px;
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .step-right {
+            padding: 20px 15%;
+          }
+        }
+      }
+
+      .slick-dots {
+        position: absolute;
+        top: 258px !important;
+        height: 25px;
+
+        button {
+          background-color: #f1f3f5;
+        }
+      }
+
+      .slick-arrow {
+        background-color: #7ab800;
+        width: 62px;
+        height: 54px;
+        z-index: 2;
+
+        &:before {
+          font-weight: bold;
+        }
+
+        &.slick-prev {
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px;
+          left: -10px;
+        }
+
+        &.slick-next {
+          border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px;
+          right: -10px;
+        }
+      }
+    }
+  }
+}

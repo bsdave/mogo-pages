@@ -1,0 +1,46 @@
+.options-list {
+  list-style: none;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  
+  .radio-container {
+    display: flex !important;
+    align-items: center;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+
+    height: 30px;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+
+      &:checked ~ .checkmark,
+      &:active input ~ .checkmark {
+        background-color: #7ab800 !important;
+      }
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: solid 3px #dee2e6;
+    }
+
+    &:hover input ~ .checkmark {
+      background-color: #f1f3f5;
+    }
+  }
+}

@@ -15,7 +15,22 @@
     color: #353a3f;
   }
 
+  dt {
+    margin-right: 30px;
+  }
+
   dd {
     font-weight: normal;
+    flex-basis: calc(50% - 30px);
+  }
+
+  &.otherwise {
+    dt {
+      font-weight: normal;
+    }
+
+    dd {
+      font-weight: bold;
+    }
   }
 }

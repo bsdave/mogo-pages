@@ -30,6 +30,14 @@ $(function () {
     $(this).parents('.answer').toggleClass('opened');
   });
 
+  $('.answer-head').click(function () {
+    $(this).parents('.answer').toggleClass('opened');
+  });
+
+  $('input[type=radio][name=application-type]').change(function () {
+    $('.downpayment-input-block').toggle(400);
+  });
+
   $('.carousel').slick({
     dots: true,
     infinite: true,

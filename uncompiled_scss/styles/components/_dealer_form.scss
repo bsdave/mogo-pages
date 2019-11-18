@@ -1,0 +1,139 @@
+.dealer-form-box {
+  margin-bottom: 100px;
+
+  .dealer-form {
+    .header-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding-bottom: 20px;
+      margin-top: 0;
+      margin-bottom: 30px;
+
+      border-bottom: 2px solid #dfe2e6;
+
+      .title {
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 1.61;
+        color: #003478;
+        margin: 0;
+      }
+
+      .change-link {
+        display: inline-block;
+        height: 25px;
+        line-height: 25px;
+        font-size: 17px;
+        color: #868e96;
+        padding-left: 35px;
+
+        background: url("../images/clock.svg") left center no-repeat;
+      }
+    }
+
+    .form-block {
+      margin-top: 50px;
+
+      .form-block-body {
+        // padding-top: 20px;
+
+        label {
+          display: block;
+          font-weight: 500;
+          font-size: 17px;
+          line-height: 0.91;
+          color: #343a40;
+          margin-bottom: 4px;
+        }
+
+        .input {
+          border: solid 3px #dee2e6;
+        }
+
+        .input-group {
+          display: block;
+          max-width: 324px;
+        }
+      }
+    }
+
+    .description {
+      font-size: 14px !important;
+    }
+
+    .checkbox-box {
+      margin-top: 50px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .backgrounded {
+    background-color: #f1f3f5;
+    padding: 0 30px 10px;
+    margin: 35px -25px 0;
+
+    .header-box {
+      background-color: #f1f3f5;
+    }
+
+    .form-block {
+      margin-top: 0;
+      padding-top: 50px;
+
+      .form-block-body {
+        padding: 0;
+
+        .input-group {
+          width: 100%;
+          max-width: none;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .dealer-form-box {
+    .dealer-form {
+      .header-box {
+        .title {
+        }
+
+        .change-link {
+        }
+      }
+
+      .form-block {
+        .form-block-body {
+          padding-left: 50px;
+        }
+      }
+
+      .checkbox-box {
+        border-top: 2px solid #dfe2e6;
+        padding-top: 30px;
+      }
+    }
+
+    .backgrounded {
+      background-color: #f1f3f5;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding: 0 30px 1px;
+      margin: 0 -25px 0;
+  
+      .header-box {
+        background-color: #f1f3f5;
+      }
+  
+      .form-block {
+        .form-block-body {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

@@ -144,33 +144,33 @@
   .client-information-block {
     margin-bottom: 20px;
   }
+}
 
-  .phone-input {
-    position: relative;
+.phone-input {
+  position: relative;
 
-    .input {
-      padding-left: 70px;
-    }
+  .input {
+    padding-left: 70px;
+  }
 
-    .phone-country-code {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 8px 0;
-      border-top-left-radius: 7px;
-      border-bottom-left-radius: 7px;
+  .phone-country-code {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
 
-      background-color: #ced4da;
-      font-weight: 500;
+    background-color: #ced4da;
+    font-weight: 500;
 
-      font-size: 17px;
-      color: #343a40;
-    }
+    font-size: 17px;
+    color: #343a40;
   }
 }
 

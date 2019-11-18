@@ -1,0 +1,565 @@
+<!-- NO SEO -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/styles/style.css">
+
+  <script src="assets/javascript/jquery.js"></script>
+  <script src="assets/javascript/slick.js"></script>
+  <script src="assets/javascript/main.js"></script>
+
+  <title>Заявка от диллера</title>
+  <meta name="description" content="Заявка от диллера">
+</head>
+
+<body>
+  <header class="header-box">
+    <div class="container">
+      <div class="navigation-box">
+        <nav class="navigation">
+          <div class="logo-box">
+            <a href="#" class="logo" title="Go to main page"></a>
+          </div>
+
+          <ul class="navigation-menu header-links">
+            <li class="navigation-menu__item"><a href="#" class="menu-link">Кредит на авто</a></li>
+            <li class="navigation-menu__item"><a href="#" class="menu-link">Кредит под залог авто</a></li>
+            <li class="navigation-menu__item"><a href="#" class="menu-link">Trade-in</a></li>
+            <!-- <li class="navigation-menu__item"><a href="#" class="menu-link">Автопортал</a></li> -->
+          </ul>
+
+          <ul class="navigation-menu dropdown">
+            <li class="navigation-menu__item"><a href="#" class="menu-link">Кредит на авто</a></li>
+            <li class="navigation-menu__item"><a href="#" class="menu-link">Кредит под залог авто</a></li>
+            <li class="navigation-menu__item"><a href="#" class="menu-link">Trade-in</a></li>
+            <!-- <li class="navigation-menu__item"><a href="#" class="menu-link">Автопортал</a></li> -->
+
+            <li class="navigation-menu__item minor"><a href="#" class="menu-link">Вопросы и ответы</a></li>
+            <li class="navigation-menu__item minor"><a href="#" class="menu-link">O Mogo</a></li>
+            <li class="navigation-menu__item minor"><a href="#" class="menu-link">Контакты</a></li>
+          </ul>
+
+          <div class="navigation-right">
+            <div class="language-select-box">
+              <span class="languages-menu__toggle" id="languages-menu-toggle">KZ</span>
+
+              <ul class="languages-menu">
+                <li class="languages-menu__item"><a href="" class="language-selector">RU</a></li>
+                <li class="languages-menu__item"><a href="" class="language-selector">KZ</a></li>
+                <li class="languages-menu__item"><a href="" class="language-selector">US</a></li>
+              </ul>
+            </div>
+
+            <div class="recall-box">
+              <span class="recall-menu__toggle" id="recall-menu-toggle"><span class="phone-logo"></span></span>
+
+              <ul class="recall-menu">
+                <li class="recall-menu__item">
+                  <a class="recall-link" href="mailto: ok@mogo.kz" target="_blank">
+                    <span class="with-badge mail">ok@mogo.kz</span>
+                  </a>
+                </li>
+                <li class="recall-menu__item">
+                  <a class="recall-link" href="tel:5551234567" target="_blank">
+                    <div class="space-between">
+                      <span class="with-badge phone">7770</span>
+                      <span class="small-text">(с 9:00 до 20:00 ежедневно,
+                        бесплатно с мобильного)</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="recall-menu__item">
+                  <a class="recall-link" href="tel:+77273331033" target="_blank">
+                    <span class="with-badge cellphone">+7 727 333 10 33</span>
+                  </a>
+                </li>
+
+                <li class="recall-menu__item">
+                  <a class="recall-link" href="tel:+77273331033" target="_blank">
+                    <span class="with-badge clock">Пн-Сб: 09:00-20:00<br>
+                      Вс: выходной</span>
+                  </a>
+                </li>
+
+                <li class="recall-menu__item">
+                  <a class="recall-link recall-button" href="#">Центры обслуживания</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hidden-menu-box">
+              <button class="hamburger hamburger--slider" type="button" id="open-dropdown-menu">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+
+            </div>
+
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="first-screen-box slim dealer-application">
+    <div class="first-screen-footer">
+      <div class="container">
+        <div class="partner-application">
+          <h1 class="big-title">Заявка на финансирование <br> для Mogo Партнеров!</h1>
+          <p class="description">С нами продают лучше и больше</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dealer-form-box">
+    <div class="container">
+      <div class="dealer-form">
+        <form action="">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="form-block">
+                <div class="header-box">
+                  <h3 class="title">Данные по займу</h3>
+                </div>
+
+                <div class="form-block-body">
+                  <div class="input-group">
+                    <label>Тип заявки</label>
+
+                    <ul class="options-list">
+                      <li>
+                        <label class="radio-container">Деньги под залог авто
+                          <input type="radio" name="application-type" checked value="leaseback">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label class="radio-container">Авто в кредит
+                          <input type="radio" name="application-type" value="leasing">
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+                <div class="form-block-body">
+                  <div class="input-group">
+                    <label for="">Сумма займа</label>
+                    <div class="input-with-label">
+                      <input type="text" class="input money" id="car-cost" value="7 000 000">
+                      <span class="label">〒</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-block-body">
+                  <div class="input-group">
+                    <label for="">Срок займа</label>
+                    <div class="input-with-label">
+                      <input type="text" class="input money" id="car-cost" value="64">
+                      <span class="label">мес.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-block-body downpayment-input-block" style="display: none;">
+                  <div class="input-group">
+                    <label for="">Первоначальный взнос</label>
+                    <div class="input-with-label">
+                      <input type="text" class="input money" id="car-cost" value="64">
+                      <span class="label">〒</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-block-body">
+                  <dl class="description-list otherwise">
+                    <dt>Ежемесячный платёж</dt>
+                    <dd>120 714 〒</dd>
+                  </dl>
+                </div>
+              </div>
+
+              <div class="form-block">
+                <div class="header-box">
+                  <h3 class="title">Код партнёра Mogo</h3>
+                </div>
+
+                <div class="form-block-body">
+                  <div class="input-group">
+                    <label for="">Код партнёра</label>
+                    <input type="text" class="input">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-block">
+                <div class="header-box">
+                  <h3 class="title">Персональные и контактные данные</h3>
+                </div>
+
+                <div class="form-block-body">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="input-group">
+                        <label for="">Имя</label>
+                        <input type="text" class="input">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="input-group">
+                        <label for="">Фамилия</label>
+                        <input type="text" class="input">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="input-group">
+                        <label for="">ИНН</label>
+                        <input type="text" class="input">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="input-group">
+                        <label for="">Телефон</label>
+                        <div class="phone-input">
+                          <span class="phone-country-code">+7</span>
+                          <input type="text" class="input phone">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-block">
+                <div class="header-box">
+                  <h3 class="title">Данные о доходах</h3>
+                </div>
+
+                <div class="form-block-body">
+                  <div class="input-group">
+                    <label for="">Ежемесячный доход <span class="opacity ml10">(На руки)</span></label>
+                    <div class="input-with-label">
+                      <input type="text" class="input money" id="car-cost" value="7 000 000">
+                      <span class="label">〒</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-5 offset-md-1">
+              <div class="backgrounded">
+                <div class="form-block">
+                  <div class="header-box">
+                    <h3 class="title">Информация о автомобиле</h3>
+                  </div>
+
+                  <div class="form-block-body">
+                    <div class="input-group">
+                      <label>Авто <span class="opacity ml10">(Выберите только одно поле)</span></label>
+
+                      <ul class="options-list">
+                        <li>
+                          <label class="radio-container">Идентификационный (VIN) номер
+                            <input type="radio" name="group1">
+                            <span class="checkmark"></span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label class="radio-container">Данные автомобиля
+                            <input type="radio" name="group1">
+                            <span class="checkmark"></span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label class="radio-container">Ссылка на авто
+                            <input type="radio" name="group1">
+                            <span class="checkmark"></span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label class="radio-container">Ещё не выбран
+                            <input type="radio" name="group1">
+                            <span class="checkmark"></span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="input-group">
+                      <label for="">Марка авто</label>
+                      <div class="select-wrapper">
+                        <select class="select" name="cars">
+                          <option value="" selected="" hidden="" disabled="">Выберите</option>
+                          <option value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                          <option value="fiat">Fiat</option>
+                          <option value="audi">Audi</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="input-group">
+                      <label for="">Модель</label>
+                      <div class="select-wrapper">
+                        <select class="select" name="cars">
+                          <option value="" selected="" hidden="" disabled="">Выберите</option>
+                          <option value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                          <option value="fiat">Fiat</option>
+                          <option value="audi">Audi</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="input-group">
+                          <label for="">Год выпуска</label>
+                          <div class="select-wrapper">
+                            <select class="select" name="cars">
+                              <option value="" selected="" hidden="" disabled="">Выберите</option>
+                              <option style="color:red" value="volvo">Volvo</option>
+                              <option value="saab">Saab</option>
+                              <option value="fiat">Fiat</option>
+                              <option value="audi">Audi</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="input-group">
+                          <label for="">Трансмиссия</label>
+                          <div class="select-wrapper">
+                            <select class="select" name="cars">
+                              <option value="" selected="" hidden="" disabled="">Выберите</option>
+                              <option style="color:red" value="volvo">Volvo</option>
+                              <option value="saab">Saab</option>
+                              <option value="fiat">Fiat</option>
+                              <option value="audi">Audi</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="input-group">
+                          <label for="">Тип топлива</label>
+                          <div class="select-wrapper">
+                            <select class="select" name="cars">
+                              <option value="" selected="" hidden="" disabled="">Выберите</option>
+                              <option style="color:red" value="volvo">Volvo</option>
+                              <option value="saab">Saab</option>
+                              <option value="fiat">Fiat</option>
+                              <option value="audi">Audi</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="input-group">
+                          <label for="">Объём двигателя</label>
+                          <div class="select-wrapper">
+                            <select class="select" name="cars">
+                              <option value="" selected="" hidden="" disabled="">Выберите</option>
+                              <option style="color:red" value="volvo">Volvo</option>
+                              <option value="saab">Saab</option>
+                              <option value="fiat">Fiat</option>
+                              <option value="audi">Audi</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="input-group">
+                      <label for="">Тип кузова</label>
+                      <div class="select-wrapper">
+                        <select class="select" name="cars">
+                          <option value="" selected="" hidden="" disabled="">Выберите</option>
+                          <option value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                          <option value="fiat">Fiat</option>
+                          <option value="audi">Audi</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="input-group">
+                      <label for="">Пробег</label>
+                      <div class="select-wrapper">
+                        <select class="select" name="cars">
+                          <option value="" selected="" hidden="" disabled="">Выберите</option>
+                          <option value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                          <option value="fiat">Fiat</option>
+                          <option value="audi">Audi</option>
+                        </select>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-7">
+              <div class="checkbox-box justify-opposit">
+                <label class="checkbox-body">
+                  <input class="checkbox" type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="description">Даю согласие на сбор и обработку моих персональных данных, а также на
+                    предоставление Mogo информации обо мне в кредитные бюро, с которыми Mogo заключен договор о
+                    предоставлении
+                    информации, в том числе на выдачу Mogo кредитного отчета из кредитного бюро, включая данные, которые
+                    поступят в будущем, в целях оценки моей кредитоспособности, а также для предоставления предложений
+                    по
+                    кредитованию.</span>
+                </label>
+              </div>
+
+              <button class="button mw292" type="submit">Подать заявку</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-box">
+    <div class="container">
+      <div class="footer-body">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <ul class="footer-list bordered">
+              <li class="list-item">
+                <a class="recall-link" href="mailto: ok@mogo.kz" target="_blank">
+                  <span class="with-badge mail">ok@mogo.kz</span>
+                </a>
+              </li>
+              <li class="list-item">
+                <a class="recall-link" href="tel:5551234567" target="_blank">
+                  <div class="space-between">
+                    <span class="with-badge phone">7770</span>
+                    <span class="small-text">(с 9:00 до 20:00 ежедневно, <br>
+                      бесплатно с мобильного)</span>
+                  </div>
+                </a>
+              </li>
+              <li class="list-item">
+                <a class="recall-link" href="tel:+77273331033" target="_blank">
+                  <span class="with-badge cellphone">+7 727 333 10 33</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <ul class="footer-list bordered">
+              <li class="list-item">
+                <a class="recall-link" href="mailto: ok@mogo.kz" target="_blank">
+                  <span class="with-badge mail">Центры обслуживания</span>
+                </a>
+              </li>
+              <li class="list-item">
+                <a class="recall-link" href="tel:+77273331033" target="_blank">
+                  <span class="with-badge clock">Пн-Сб: 09:00-20:00<br>
+                    Вс: выходной</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <ul class="footer-list bordered">
+              <li class="list-item"><a class="recall-link" href="mailto: ok@mogo.kz" target="_blank"><span
+                    class="with-badge">О Mogo</span></a></li>
+              <li class="list-item"><a class="recall-link" href="mailto: ok@mogo.kz" target="_blank"><span
+                    class="with-badge">Контакты</span></a></li>
+              <li class="list-item"><a class="recall-link" href="mailto: ok@mogo.kz" target="_blank"><span
+                    class="with-badge">Адреса партнеров</span></a></li>
+              <li class="list-item"><a class="recall-link" href="mailto: ok@mogo.kz" target="_blank"><span
+                    class="with-badge">Стать партнером</span></a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <ul class="footer-list">
+              <li class="list-item"><a class="recall-link" href="mailto: ok@mogo.kz" target="_blank"><span
+                    class="with-badge">Вопросы и ответы</span></a></li>
+              <li class="list-item"><a class="recall-link" href="mailto: ok@mogo.kz" target="_blank"><span
+                    class="with-badge">Партнерам</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="basement-box">
+    <div class="container">
+      <div class="basement-head">
+        <h4>Информация об услугах, предоставляемых «MOGO Kazakhstan»:</h4>
+      </div>
+      <div class="basement-body">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="key-points">
+              <span class="key-point">1. Мы предлагаем автокредиты и займы под авто (автозалоги)</span>
+              <span class="key-point">2. Сумма кредитования: от 300 000 до 7 000 000 тенге</span>
+              <span class="key-point">3. Период погашения долга: от 3 до 84 месяцев</span>
+              <span class="key-point">4. Ставка по кредиту (в зависимости от суммы кредита и стоимости автомобиля): от
+                2,5 до 5%
+                ежемесячно
+                или от
+                42 до 60% ГЭСВ. При этом никаких комиссий за выдачу и обслуживание кредита нет. Первоначальный взнос от
+                10%
+                до 30%</span>
+              <span class="key-point">5. Комиссия за досрочное и частичное погашение 5%</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="key-points">
+              <span class="key-point">6. В случае, если вы не можете своевременно погасить кредит, сразу же свяжитесь с
+                нами. Мы обсудим с
+                вами возможные варианты решения: пересмотр графика платежей, частичное погашение текущего платежа или
+                продажа залогового автомобиля, в случае если кредит вам больше не подходит.</span>
+              <span class="key-point">7. Пример автокредита: срок - 36 месяцев, цена авто - 3 000 000 тенге,
+                первоначальный взнос - 900
+                000
+                тенге, ежемесячный платеж - 118 872 тенге</span>
+              <span class="key-point">8. Пример автозалога: срок - 36 месяцев, сумма займа - 3 000 000 тенге,
+                ежемесячный платеж - 164 157
+                тенге</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: -34.397, lng: 150.644 },
+        zoom: 8
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+</body>
+
+</html>

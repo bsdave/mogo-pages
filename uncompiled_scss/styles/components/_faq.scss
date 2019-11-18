@@ -25,6 +25,10 @@
 
       width: 100%;
       margin-bottom: 25px;
+
+      &.active {
+        background: #97e006;
+      }
     }
   }
 }

@@ -1,4 +1,6 @@
 $(function () {
+  $('html').addClass('js');
+
   $('#open-dropdown-menu').click(function () {
     $(this).toggleClass('is-active');
     $('.navigation-menu.dropdown').toggleClass('is-opened');
@@ -68,4 +70,26 @@ $(function () {
     $(this).html(newText);
   });
 
+  if ($("#floating-application").length > 0) {
+    const floatingApplication = new Dragdealer('floating-application', {
+      x: 0.5,
+      steps: 3,
+    });
+
+    $("#open-floating-application").click(function () {
+      $('.application-body-box').toggleClass('opened');
+      floatingApplication.disable();
+    });
+
+    $(".close-application").click(function () {
+      $('.application-body-box').toggleClass('opened');
+      floatingApplication.enable();
+    });
+  }
+
+  $('.inputfile').change(function (e) {
+    let span = $(this).next('label').find('span');
+
+    span.html(e.target.value.split('\\').pop());
+  });
 });

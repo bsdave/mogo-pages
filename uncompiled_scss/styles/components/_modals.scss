@@ -23,7 +23,7 @@
   }
 
   &.opened {
-    z-index: 1000;
+    z-index: 9999;
     opacity: 1;
   }
 
@@ -32,36 +32,6 @@
     z-index: 9999;
     background-color: #f1f3f5;
     height: 100%;
-
-    .modal-head {
-      position: relative;
-      padding: 20px;
-      background: #7ab800;
-      height: 97px;
-
-      .title {
-        font-size: 25px;
-        line-height: 2.28;
-        color: #ffffff;
-        margin: 0;
-      }
-
-      .close-modal {
-        position: absolute;
-        top: -2px;
-        right: 25px;
-
-        width: 65px;
-        height: 63px;
-
-        border: 2px solid white;
-        border-bottom-left-radius: 50%;
-        border-bottom-right-radius: 50%;
-
-        background: url("../images/close.svg") center no-repeat, transparent;
-        background-size: 40%;
-      }
-    }
 
     .modal-body {
       padding: 30px 20px;
@@ -78,6 +48,39 @@
       overflow: scroll;
       height: calc(100% - 97px);
     }
+  }
+}
+
+.application-head,
+.modal-head {
+  position: relative;
+  padding: 20px;
+  background: #7ab800;
+  height: 97px;
+  overflow: hidden;
+
+  .title {
+    font-size: 25px;
+    line-height: 2.28;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .close-application,
+  .close-modal {
+    position: absolute;
+    top: -2px;
+    right: 25px;
+
+    width: 65px;
+    height: 63px;
+
+    border: 2px solid white;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+    background: url("../images/close.svg") center no-repeat, transparent;
+    background-size: 40%;
   }
 }
 

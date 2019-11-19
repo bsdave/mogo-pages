@@ -40,7 +40,7 @@
 
         background-image: linear-gradient(to top, #7ab800, #96c114);
         border-radius: 12px;
-        padding: 30px 40px 20px;
+        padding: 20px;
 
         display: flex;
         flex-direction: column;
@@ -49,6 +49,10 @@
 
         .title {
           margin: 0;
+        }
+
+        .description {
+          font-size: 14px;
         }
 
         .title,
@@ -89,6 +93,8 @@
         }
 
         .details {
+          padding: 30px 30px 20px;
+
           .button {
             cursor: pointer;
             border: none;
@@ -98,6 +104,10 @@
               color: #353a3f;
               background: white;
             }
+          }
+
+          .description {
+            font-size: 17px;
           }
         }
       }

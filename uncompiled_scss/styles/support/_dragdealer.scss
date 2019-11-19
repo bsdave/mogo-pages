@@ -1,0 +1,12 @@
+.dragdealer {
+  position: relative;
+
+  .handle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+
+    width: calc(100% / 3);
+  }
+}

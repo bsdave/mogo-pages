@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/styles/style.css">
+
+  <script src="assets/javascript/jquery.js"></script>
+  <script src="assets/javascript/slick.js"></script>
+  <script src="assets/javascript/dragdealer.js"></script>
+  <script src="assets/javascript/main.js"></script>
+
+  <title>Автокредит в Казахстане - автокредит на бу авто - деньги под залог авто</title>
+  <meta name="description"
+    content="Автокредит или кредит под залог автомобиля в течение 30 мин! ✔️Машина любого года выпуска и марки! ✔️Кредит до 7 млн KZT! ☎Звоните!">
+</head>
+
+<body>
+  <header class="header-box">
+    <div class="container">
+      <div class="navigation-box">
+        <nav class="navigation">
+          <div class="logo-box">
+            <a href="#" class="logo" title="Go to main page"></a>
+          </div>
+
+          <ul class="navigation-menu header-links">
+            <li class="navigation-menu__item "><a href="#" class="menu-link">Кредит на авто</a></li>
+            <li class="navigation-menu__item"><a href="#" class="menu-link">Кредит под залог авто</a></li>
+            <li class="navigation-menu__item"><a href="#" class="menu-link">Trade-in</a></li>
+            <!-- <li class="navigation-menu__item"><a href="#" class="menu-link">Автопортал</a></li> -->
+          </ul>
+
+          <ul class="navigation-menu dropdown">
+            <li class="navigation-menu__item"><a href="#" class="menu-link">Кредит на авто</a></li>
+            <li class="navigation-menu__item"><a href="#" class="menu-link">Кредит под залог авто</a></li>
+            <li class="navigation-menu__item"><a href="#" class="menu-link">Trade-in</a></li>
+            <!-- <li class="navigation-menu__item"><a href="#" class="menu-link">Автопортал</a></li> -->
+
+            <li class="navigation-menu__item minor"><a href="#" class="menu-link">Вопросы и ответы</a></li>
+            <li class="navigation-menu__item minor"><a href="#" class="menu-link">O Mogo</a></li>
+            <li class="navigation-menu__item minor"><a href="#" class="menu-link">Контакты</a></li>
+          </ul>
+
+          <div class="navigation-right">
+            <div class="language-select-box">
+              <span class="languages-menu__toggle" id="languages-menu-toggle">KZ</span>
+
+              <ul class="languages-menu">
+                <li class="languages-menu__item"><a href="" class="language-selector">RU</a></li>
+                <li class="languages-menu__item"><a href="" class="language-selector">KZ</a></li>
+                <li class="languages-menu__item"><a href="" class="language-selector">US</a></li>
+              </ul>
+            </div>
+
+            <div class="recall-box">
+              <span class="recall-menu__toggle" id="recall-menu-toggle"><span class="phone-logo"></span></span>
+
+              <ul class="recall-menu">
+                <li class="recall-menu__item">
+                  <a class="recall-link" href="mailto: ok@mogo.kz" target="_blank">
+                    <span class="with-badge mail">ok@mogo.kz</span>
+                  </a>
+                </li>
+                <li class="recall-menu__item">
+                  <a class="recall-link" href="tel:5551234567" target="_blank">
+                    <div class="space-between">
+                      <span class="with-badge phone">7770</span>
+                      <span class="small-text">(с 9:00 до 20:00 ежедневно,
+                        бесплатно с мобильного)</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="recall-menu__item">
+                  <a class="recall-link" href="tel:+77273331033" target="_blank">
+                    <span class="with-badge cellphone">+7 727 333 10 33</span>
+                  </a>
+                </li>
+
+                <li class="recall-menu__item">
+                  <a class="recall-link" href="tel:+77273331033" target="_blank">
+                    <span class="with-badge clock">Пн-Сб: 09:00-20:00<br>
+                      Вс: выходной</span>
+                  </a>
+                </li>
+
+                <li class="recall-menu__item">
+                  <a class="recall-link recall-button" href="#">Центры обслуживания</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hidden-menu-box">
+              <button class="hamburger hamburger--slider" type="button" id="open-dropdown-menu">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+
+            </div>
+
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="first-screen-box">
+    <div class="first-screen-body">
+      <div class="container disable-on-mobile">
+
+        <div class="first-screen-slogan-box">
+          <div class="first-screen-slogan-body">
+            <div class="container disable-on-mobile">
+              <div class="col-12 col-md-6">
+                <h1 class="big-text">Автокредит в <br>Казахстане</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="calculator-box">
+            <div class="calculator-body">
+              <h2 class="head-link">Калькулятор Автокредита</h2>
+
+              <div class="calculator">
+                <form action="#">
+
+                  <div class="calculator-block">
+                    <div class="row">
+                      <div class="col-12 col-md-7">
+                        <div class="label-box">
+                          <label for="car-cost">Стоимость автомобиля</label>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-5">
+                        <div class="input-group">
+                          <button type="button" class="change-amount decrease"></button>
+                          <div class="input-with-label">
+                            <input type="text" class="input money" id="car-cost" value="7 000 000">
+                            <span class="label">〒</span>
+                          </div>
+                          <button type="button" class="change-amount increase"></button>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <div class="range-box">
+                          <input type="range" min="300000" max="7000000" value="50%" step="1000" class="range slider"
+                            id="myRange">
+                          <div class="pips">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="range-values">
+                            <span class="range-value">450 000 〒</span>
+                            <span class="range-value">7 000 000 〒</span>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="calculator-block">
+                    <div class="row">
+                      <div class="col-12 col-md-7">
+                        <div class="label-box">
+                          <label for="car-cost">Первоначальный взнос</label>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-5">
+                        <div class="input-group">
+                          <button type="button" class="change-amount decrease"></button>
+                          <div class="input-with-label">
+                            <input type="text" class="input money" id="car-cost" value="70 000">
+                            <span class="label">〒</span>
+                          </div>
+                          <button type="button" class="change-amount increase"></button>
+                        </div>
+
+                      </div>
+
+                      <div class="col-12">
+                        <div class="range-box">
+                          <input type="range" min="450000" max="7000000" value="50%" step="1000" class="range slider"
+                            id="myRange">
+                          <div class="pips">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="range-values">
+                            <span class="range-value">450 000 〒</span>
+                            <span class="range-value">7 000 000 〒</span>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="calculator-block">
+                    <div class="row">
+                      <div class="col-12 col-md-7">
+                        <div class="label-box">
+                          <label for="car-cost">Срок займа</label>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-5">
+                        <div class="input-group">
+                          <button type="button" class="change-amount decrease"></button>
+                          <div class="input-with-label">
+                            <input type="text" class="input money" id="car-cost" value="84">
+                            <span class="label">мес.</span>
+                          </div>
+                          <button type="button" class="change-amount increase"></button>
+                        </div>
+
+                      </div>
+
+                      <div class="col-12">
+                        <div class="range-box">
+                          <input type="range" min="3" max="64" value="50%" step="1" class="range slider" id="myRange">
+                          <div class="pips">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="range-values">
+                            <span class="range-value">3 мес.</span>
+                            <span class="range-value">84 мес.</span>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="calculator-output">
+                    <div class="purpose-amount">
+                      <span class="purpose">Ежемесячный платеж</span>
+                      <span class="amount"><span class="dynamic bold">203 549</span>〒</span>
+                    </div>
+
+                    <div class="purpose-amount">
+                      <span class="purpose">Сумма финансирования</span>
+                      <span class="amount"><span class="dynamic">2 100 000</span>〒</span>
+                    </div>
+                  </div>
+
+                  <div class="client-information-block">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <input type="text" class="input" placeholder="Имя">
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <input type="text" class="input" placeholder="Фамилия">
+                      </div>
+                    </div>
+
+                    <input type="text" class="input" placeholder="ИНН">
+                    <div class="phone-input">
+                      <span class="phone-country-code">+7</span>
+                      <input type="text" class="input phone" placeholder="Телефон">
+                    </div>
+                  </div>
+
+                  <div class="checkbox-box justify-opposit">
+                    <label class="checkbox-body">
+                      <input class="checkbox" type="checkbox">
+                      <span class="checkmark"></span>
+                      <span class="agreement-link">Даю согласие на обработку своих личных данных</span>
+                    </label>
+                    <span class="open-modal agreement" data-modal-id="agreement">(?)</span>
+                  </div>
+
+                  <button class="button" type="submit">Заявка на автокредит</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="first-screen-footer">
+      <div class="container">
+        <ul class="conditions">
+          <li class="condition">Финансирование в размере от 300 000 до 7 000 000 тенге. <br>
+            Получите до 90% от стоимости авто.
+          </li>
+          <li class="condition">Быстрое рассмотрение заявки — всего за 30 минут. <br> Купите машину
+            в день обращения.
+          </li>
+          <li class="condition">Заключение договора возможно <strong>без подтверждения дохода</strong> и <strong>с
+              плохой кредитной историей</strong>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="offers-box">
+    <div class="container">
+      <div class="offers-body">
+        <div class="title-box">
+          <h2 class="common-title">Ищете выгодный автокредит на БУ автомобиль или <br> хотите взять деньги под залог
+            авто?</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="offer">
+              <img class="img-block" src="assets/images/mogo_by_avtomarket.png" alt="Автостоянка мого">
+              <h3 class="title">Автостоянка Mogo</h3>
+              <a href="#" class="button">Выбрать авто</a>
+
+              <div class="details">
+                <h3 class="title">Автостоянка Mogo</h3>
+                <p class="description">Пройдите с Mogo все этапы покупки автомобиля: от его выбора до оформления
+                  договора на кредит! В нашем Instagram аккаунте @mogo.cars представлены актуальные объявления о продаже
+                  машин разных марок и годов выпуска. Подав заявку, вы можете <strong>рассчитать автокредит
+                    онлайн</strong> и узнать
+                  размер ежемесячных платежей.</p>
+                <a href="#" class="button negative">Выбрать авто</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="offer">
+              <img class="img-block" src="assets/images/mogo_by_leasing.png" alt="Автостоянка мого">
+              <h3 class="title">Trade-in авто</h3>
+              <a href="#" class="button">больше о трейд-ин</a>
+
+              <div class="details">
+                <h3 class="title">Trade-in авто</h3>
+                <p class="description">Есть авто, но хотите заменить его другим? С нашей помощью вы сможете
+                  <strong>купить авто
+                    через трейд ин в Казахстане</strong>. Специалисты Mogo объективно оценят рыночную стоимость машины,
+                  и вам не
+                  придется заниматься его продажей. Это сэкономит время и деньги: уже сегодня получится уехать на другом
+                  автомобиле!</p>
+                <a href="#" class="button negative">программа трейд-ин</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="offer">
+              <img class="img-block" src="assets/images/mogo_by_credit.png" alt="Автостоянка мого">
+              <h3 class="title">Подбор автомобиля</h3>
+              <a href="#" class="button">Позвонить</a>
+
+              <div class="details">
+                <h3 class="title">Подбор автомобиля</h3>
+                <p class="description">Поможем подобрать машину с нужными характеристиками без переплат за лишние опции.
+                  Учитываем пожелания по модели и году выпуска. Все авто проходят экспертную оценку состояния и
+                  полностью соответствуют своей рыночной стоимости.</p>
+                <a href="#" class="button negative">Позвонить</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="advantages-box">
+    <div class="container disable-on-mobile">
+      <div class="advantages-body">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img class="img-block" src="assets/images/advantages.jpg" alt="Преимущества">
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="advantage centered">
+              <h2 class="common-title">Преимущества <br> автокредитования Mogo</h2>
+              <p class="description">Mogo — международная компания с филиалами в 18 странах. Основана в 2012 году. Одно
+                из основных направлений деятельности — автокредитование для физлиц. За все время услугами Mogo
+                воспользовалось больше 115 000 клиентов. В Казахстане оформить <strong>автокредит на новую или бу
+                  машину</strong> можно в
+                Нур-Султане, Алматы, Шымкенте и их областях.</p>
+
+              <p class="description hideable">Предлагаем прозрачные и удобные условия сотрудничества. Договор заключаем
+                на срок от 3 до 84 месяцев <strong>с первоначальным взносом</strong> от 10% от стоимости авто.
+                Максимальная сумма
+                кредита — 7 000 000 ₸. Также доступна такая услуга как <strong>займ под залог авто с правом
+                  использования</strong>.</p>
+
+
+              <p class="description hideable">
+                Лояльно относимся к составу предоставляемых документов. Не требуем справок о доходах и сотрудничаем с
+                клиентами, имеющих плохую кредитную историю.
+                Принимаем решение по заявкам клиентов в течение 30 минут с момента обращения. Интересует
+                <strong>автокредит под
+                  залог автомобиля</strong>? Воспользуйтесь нашими услугами и уже сегодня садитесь за руль выбранной
+                машины!
+              </p>
+
+              <button class="button negative show-more" data-toggle-text="закрыть">узнать больше</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="services-box">
+    <div class="container">
+      <div class="services-head">
+        <h2 class="common-title">Какая услуга Вас интересует?</h2>
+      </div>
+      <div class="services-body">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="service">
+              <div class="service-head">
+                <img class="service-image" src="assets/images/carlot.jpg">
+                <div class="service-title-box">
+                  <h3 class="service-title">Автокредит</h3>
+                </div>
+              </div>
+
+              <div class="service-body">
+                <p class="description">Предлагаем взять <strong>автокредит на подержанное или новое авто</strong> в
+                  одном из филиалов Mogo. Рассмотрим заявку
+                  за 30 минут, а на <strong>оформление автокредита</strong> уйдет не больше 1 дня. Из документов нужны
+                  только паспорт и
+                  свидетельство о регистрации машины.
+                </p>
+                <p class="description">
+                  Определитесь с комфортным сроком действия договора и доступной величиной первоначального взноса. Для
+                  расчета удобно использовать наш калькулятор. Сравните условия в разных компаниях и убедитесь, что
+                  <strong>автокредитование в Казахстане</strong> быстрее и удобнее с Mogo!</p>
+                <a href="#" class="button negative mw292">ХОЧУ АВТО</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="service">
+              <div class="service-head">
+                <img class="service-image" src="assets/images/money.jpg">
+                <div class="service-title-box">
+                  <h3 class="service-title">Деньги под залог <br> автомобиля</h3>
+                </div>
+              </div>
+
+              <div class="service-body">
+                <p class="description">
+                  Есть автомобиль, но срочно нужны деньги? Это не значит, что его нужно продавать. Просто возьмите
+                  <strong>займ
+                    под залог машины</strong> у Mogo. Пользуйтесь автомобилем дальше.
+                </p>
+                <p class="description">
+                  Прежде чем выдать <strong>займ денег под залог авто</strong> эксперты проверят его состояние и озвучат
+                  точную сумму, на
+                  которую можно рассчитывать. Обратившись к нам, вы получите объективную оценку стоимости своего
+                  транспортного средства. Сравните наше предложение с другими и заключайте договор!
+                </p>
+                <a href="#" class="button negative mw292">ХОЧУ ДЕНЬГИ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-box">
+    <div class="container">
+      <div class="footer-body">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <ul class="footer-list bordered">
+              <li class="list-item">
+                <a class="recall-link" href="mailto: ok@mogo.kz" target="_blank">
+                  <span class="with-badge mail">ok@mogo.kz</span>
+                </a>
+              </li>
+              <li class="list-item">
+                <a class="recall-link" href="tel:5551234567" target="_blank">
+                  <div class="space-between">
+                    <span class="with-badge phone">7770</span>
+                    <span class="small-text">(с 9:00 до 20:00 ежедневно, <br>
+                      бесплатно с мобильного)</span>
+                  </div>
+                </a>
+              </li>
+              <li class="list-item">
+                <a class="recall-link" href="tel:+77273331033" target="_blank">
+                  <span class="with-badge cellphone">+7 727 333 10 33</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <ul class="footer-list bordered">
+              <li class="list-item">
+                <a class="recall-link" href="mailto: ok@mogo.kz" target="_blank">
+                  <span class="with-badge mail">Центры обслуживания</span>
+                </a>
+              </li>
+              <li class="list-item">
+                <a class="recall-link" href="tel:+77273331033" target="_blank">
+                  <span class="with-badge clock">Пн-Сб: 09:00-20:00<br>
+                    Вс: выходной</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <ul class="footer-list bordered">
+              <li class="list-item"><a class="recall-link" href="mailto: ok@mogo.kz" target="_blank"><span
+                    class="with-badge">О Mogo</span></a></li>
+              <li class="list-item"><a class="recall-link" href="mailto: ok@mogo.kz" target="_blank"><span
+                    class="with-badge">Контакты</span></a></li>
+              <li class="list-item"><a class="recall-link" href="mailto: ok@mogo.kz" target="_blank"><span
+                    class="with-badge">Адреса партнеров</span></a></li>
+              <li class="list-item"><a class="recall-link" href="mailto: ok@mogo.kz" target="_blank"><span
+                    class="with-badge">Стать партнером</span></a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <ul class="footer-list">
+              <li class="list-item"><a class="recall-link" href="mailto: ok@mogo.kz" target="_blank"><span
+                    class="with-badge">Вопросы и ответы</span></a></li>
+              <li class="list-item"><a class="recall-link" href="mailto: ok@mogo.kz" target="_blank"><span
+                    class="with-badge">Партнерам</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="basement-box">
+    <div class="container">
+      <div class="basement-head">
+        <h4>Информация об услугах, предоставляемых «MOGO Kazakhstan»:</h4>
+      </div>
+      <div class="basement-body">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="key-points">
+              <span class="key-point">1. Мы предлагаем автокредиты и займы под авто (автозалоги)</span>
+              <span class="key-point">2. Сумма кредитования: от 300 000 до 7 000 000 тенге</span>
+              <span class="key-point">3. Период погашения долга: от 3 до 84 месяцев</span>
+              <span class="key-point">4. Ставка по кредиту (в зависимости от суммы кредита и стоимости автомобиля): от
+                2,5 до 5%
+                ежемесячно
+                или от
+                42 до 60% ГЭСВ. При этом никаких комиссий за выдачу и обслуживание кредита нет. Первоначальный взнос от
+                10%
+                до 30%</span>
+              <span class="key-point">5. Комиссия за досрочное и частичное погашение 5%</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="key-points">
+              <span class="key-point">6. В случае, если вы не можете своевременно погасить кредит, сразу же свяжитесь с
+                нами. Мы обсудим с
+                вами возможные варианты решения: пересмотр графика платежей, частичное погашение текущего платежа или
+                продажа залогового автомобиля, в случае если кредит вам больше не подходит.</span>
+              <span class="key-point">7. Пример автокредита: срок - 36 месяцев, цена авто - 3 000 000 тенге,
+                первоначальный взнос - 900
+                000
+                тенге, ежемесячный платеж - 118 872 тенге</span>
+              <span class="key-point">8. Пример автозалога: срок - 36 месяцев, сумма займа - 3 000 000 тенге,
+                ежемесячный платеж - 164 157
+                тенге</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-box" id="agreement">
+    <div class="modal">
+      <div class="modal-head">
+        <h4 class="title">Подробнее</h4>
+        <button type="button" class="close-modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="checkbox-box">
+          <label class="checkbox-body">
+            <input class="checkbox" type="checkbox">
+            <span class="checkmark"></span>
+            <span>Даю согласие на сбор и обработку моих персональных данных, а также на
+              предоставление Mogo информации обо мне в кредитные бюро, с которыми Mogo заключен договор о предоставлении
+              информации, в том числе на выдачу Mogo кредитного отчета из кредитного бюро, включая данные, которые
+              поступят в будущем, в целях оценки моей кредитоспособности, а также для предоставления предложений по
+              кредитованию.</span>
+          </label>
+        </div>
+
+        <div class="horizontal-centered">
+          <button type="button" class="button mw292">Готово</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="floating-application-box">
+    <div id="floating-application" class="dragdealer">
+      <div class="handle">
+        <div class="floating-application">
+          <div class="upper-head">
+            <button class="button empty" id="open-floating-application">Заявка на консультацию</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="application-body-box">
+    <div class="application-head">
+      <h4 class="title">Заявка</h4>
+      <button type="button" class="close-application"></button>
+    </div>
+    <div class="application-body">
+      <form action="">
+        <div class="application-form-body">
+          <img class="form-logo" src="assets/images/car-icon.png" alt="">
+
+          <span class="dots"><span class="dot"></span></span>
+
+          <div class="input-group money-box">
+            <button type="button" class="change-amount decrease"></button>
+            <div class="input-with-label">
+              <input type="text" class="input money" id="car-cost" value="7 000 000">
+              <span class="label">〒</span>
+            </div>
+            <button type="button" class="change-amount increase"></button>
+          </div>
+
+          <div class="input-group month-box">
+            <button type="button" class="change-amount decrease"></button>
+            <div class="input-with-label">
+              <input type="text" class="input money" id="car-cost" value="84">
+              <span class="label">мес.</span>
+            </div>
+            <button type="button" class="change-amount increase"></button>
+          </div>
+
+          <span class="dots"><span class="dot"></span><span class="dot"></span></span>
+
+          <div class="usual-box">
+            <input type="text" class="input" placeholder="Имя">
+          </div>
+
+          <div class="usual-box">
+            <input type="text" class="input" placeholder="Фамилия">
+          </div>
+
+          <div class="usual-box">
+            <input type="text" class="input" placeholder="ИНН">
+          </div>
+
+          <div class="usual-box no-margin">
+            <div class="phone-input">
+              <span class="phone-country-code">+7</span>
+              <input type="text" class="input phone" placeholder="Телефон">
+            </div>
+          </div>
+
+          <span class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></span>
+
+
+          <div class="checkbox-box justify-opposit">
+            <label class="checkbox-body">
+              <input class="checkbox" type="checkbox">
+              <span class="checkmark"></span>
+              <span class="agreement-link">Даю согласие на обработку своих личных данных</span>
+            </label>
+            <span class="open-modal agreement" data-modal-id="agreement">(?)</span>
+          </div>
+
+          <div class="button-box">
+            <button class="button empty" type="submit">подать заявку</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

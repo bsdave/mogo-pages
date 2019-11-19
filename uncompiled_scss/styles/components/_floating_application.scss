@@ -1,0 +1,214 @@
+.floating-application-box {
+  position: fixed;
+  bottom: 0;
+  left: -100%;
+  right: -100%;
+  z-index: 1000;
+  height: 111px;
+
+  .floating-application {
+    border-radius: 0;
+
+    .upper-head {
+      position: relative;
+      height: 111px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: #7ab800;
+
+      &::before {
+        content: "";
+        background: url("../images/hand-slide-white.png") center no-repeat, #7ab800;
+        background-size: 50%;
+        border-radius: 50%;
+
+        display: block;
+        height: 50px;
+        width: 50px;
+
+        position: absolute;
+        z-index: 1001;
+        top: -25px;
+        right: 30px;
+      }
+    }
+  }
+}
+
+.application-body-box {
+  position: fixed;
+  z-index: -1;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #7ab800;
+
+  .application-body {
+    background-color: #f1f3f5;
+    padding: 25px 25px 30px;
+    height: calc(100% - 97px);
+    overflow-y: scroll;
+
+    .checkbox-box {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &.opened {
+    z-index: 1111;
+    opacity: 1;
+  }
+
+  .dots {
+    display: none;
+  }
+
+  .button {
+    color: white;
+    border-color: #7ab800;
+    background-color: #7ab800;
+  }
+}
+
+.form-logo {
+  display: none;
+}
+
+@include desktop {
+  .floating-application-box {
+    display: none;
+  }
+
+  .form-logo {
+    display: block;
+    height: 34px;
+    width: auto;
+  }
+
+  .application-body-box {
+    z-index: 1111;
+    opacity: 1;
+    top: 0;
+    bottom: auto;
+    height: 105px;
+
+    display: flex;
+    justify-content: center;
+
+    background-image: linear-gradient(to top, #7ab800, #559301);
+
+    .application-head {
+      display: none;
+    }
+
+    .application-body {
+      padding: 0;
+      height: auto;
+      overflow-y: auto;
+      background: none;
+      background-image: linear-gradient(to right, #7ab800, transparent);
+      padding-left: 35px;
+      border-top-left-radius: 52.5px;
+      border-bottom-left-radius: 52.5px;
+
+      width: 1280px;
+
+      height: 100%;
+
+      form {
+        height: 100%;
+      }
+
+      .application-form-body {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .checkbox-box {
+          display: none;
+        }
+
+        .input-group,
+        .phone-country-code,
+        .phone-input,
+        .input {
+          height: 44px;
+          margin: 0;
+          font-size: 15px;
+        }
+
+        .input {
+          padding-left: 10px;
+          padding-top: 17px;
+          padding-bottom: 14px;
+        }
+
+        .phone-country-code {
+          width: 40px;
+        }
+
+        .phone-input {
+          .input {
+            padding-left: 45px;
+          }
+        }
+
+        .money-box {
+          flex-shrink: 0;
+          flex-basis: 130px;
+          margin-right: 15px;
+        }
+
+        .month-box {
+          flex-shrink: 0;
+          flex-basis: 100px;
+        }
+
+        .usual-box {
+          flex-shrink: 0;
+          flex-grow: 1;
+          flex-basis: 150px;
+
+          .input {
+            padding-right: 10px;
+            &::placeholder {
+              font-weight: normal;
+            }
+          }
+          
+          &:not(.no-margin) {
+            margin-right: 15px;
+            flex-basis: 138px;
+            flex-grow: 0;
+          }
+        }
+
+        .button-box {
+          flex-shrink: 0;
+          width: 219px;
+
+          .button {
+            border: solid 3px #ffffff;
+            padding: 13px;
+          }
+        }
+
+        .input-with-label {
+          .input {
+            padding-right: 30px;
+          }
+        }
+      }
+
+      .dots {
+        display: flex;
+      }
+    }
+  }
+}

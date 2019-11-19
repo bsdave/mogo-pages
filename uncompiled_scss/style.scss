@@ -12,6 +12,8 @@
 @import "styles/support/description_list";
 @import "styles/support/search";
 @import "styles/support/checkmark";
+@import "styles/support/dragdealer";
+@import "styles/support/file_input";
 
 @import "styles/components/header";
 @import "styles/components/first_screen";
@@ -31,6 +33,7 @@
 @import "styles/components/faq";
 @import "styles/components/carousel";
 @import "styles/components/dealer_form";
+@import "styles/components/floating_application";
 
 body {
   font-family: "Rubik", sans-serif;

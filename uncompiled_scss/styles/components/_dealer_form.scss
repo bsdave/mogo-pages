@@ -55,6 +55,11 @@
         .input-group {
           display: block;
           max-width: 324px;
+
+          &.file {
+            width: 100%;
+            max-width: none;
+          }
         }
       }
     }

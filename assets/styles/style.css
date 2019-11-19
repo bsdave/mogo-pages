@@ -871,6 +871,14 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .input.money { font-weight: bold; }
 
+.h100 { height: 100%; }
+
+.dots { display: flex; align-items: center; margin-left: 10px; margin-right: 10px; }
+
+.dots .dot { flex-shrink: 0; flex-grow: 0; flex-basis: 5px; display: inline-block; width: 5px; height: 5px; background-color: #ffffff; border-radius: 50%; }
+
+.dots .dot:not(:last-child) { margin-right: 2px; }
+
 .select-wrapper { position: relative; }
 
 .select-wrapper .select { width: 100%; font-size: 17px; line-height: 0.94; font-weight: 500; padding: 10px; border-radius: 7px; outline: none; -webkit-appearance: none; border: none; padding: 14px 19px 16px; color: #4f555a; margin: 8px 0; background-color: #ffffff; }
@@ -1005,6 +1013,18 @@ strong { font-weight: inherit; }
 .options-list .radio-container .checkmark { position: absolute; top: 0; left: 0; height: 25px; width: 25px; background-color: #ffffff; border-radius: 50%; border: solid 3px #dee2e6; }
 
 .options-list .radio-container:hover input ~ .checkmark { background-color: #f1f3f5; }
+
+.dragdealer { position: relative; }
+
+.dragdealer .handle { position: absolute; top: 0; left: 0; cursor: pointer; width: calc(100% / 3); }
+
+.js .inputfile { width: 0.1px; height: 0.1px; opacity: 0; overflow: hidden; position: absolute; z-index: -1; }
+
+.inputfile + label { max-width: 100%; font-size: 17px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; cursor: pointer; display: inline-block; overflow: hidden; padding: 18px; border-radius: 7px; border: solid 3px #dee2e6; margin: 8px 0 !important; }
+
+.no-js .inputfile + label { display: none; }
+
+.inputfile + label svg { width: 1em; height: 1em; vertical-align: middle; fill: currentColor; margin-top: -0.25em; margin-right: 0.25em; }
 
 .header-box { background: white; }
 
@@ -1200,12 +1220,6 @@ strong { font-weight: inherit; }
 
 .calculator .pips > * { display: block; height: 4px; width: 1px; background-color: #adb5bd; }
 
-.calculator .change-amount { position: relative; width: 32px; height: 32px; border-radius: 50%; border: 3px solid #7ab800; outline: 0; padding: 0; background: transparent; flex: none; }
-
-.calculator .change-amount.decrease::before, .calculator .change-amount.decrease::after, .calculator .change-amount.increase::before, .calculator .change-amount.increase::after { content: ""; display: block; width: 16px; height: 2px; border-radius: 1px; background-color: #7ab800; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
-
-.calculator .change-amount.increase:after { transform: translate(-50%, -50%) rotate(90deg); }
-
 .calculator .range-values { display: flex; justify-content: space-between; }
 
 .calculator .range-values .range-value { font-size: 15px; line-height: 1.27; font-weight: normal; color: #adb5bd; }
@@ -1226,6 +1240,12 @@ strong { font-weight: inherit; }
 
 .calculator .client-information-block { margin-bottom: 20px; }
 
+.change-amount { position: relative; width: 32px; height: 32px; border-radius: 50%; border: 3px solid #7ab800; outline: 0; padding: 0; background: transparent; flex: none; }
+
+.change-amount.decrease::before, .change-amount.decrease::after, .change-amount.increase::before, .change-amount.increase::after { content: ""; display: block; width: 16px; height: 2px; border-radius: 1px; background-color: #7ab800; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+.change-amount.increase:after { transform: translate(-50%, -50%) rotate(90deg); }
+
 .phone-input { position: relative; }
 
 .phone-input .input { padding-left: 70px; }
@@ -1245,9 +1265,11 @@ strong { font-weight: inherit; }
 
 .offers-box .offers-body .offer .button { max-width: 250px; }
 
-.offers-box .offers-body .offer .details { position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: 0; transition: 300ms; background-image: linear-gradient(to top, #7ab800, #96c114); border-radius: 12px; padding: 30px 40px 20px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; }
+.offers-box .offers-body .offer .details { position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: 0; transition: 300ms; background-image: linear-gradient(to top, #7ab800, #96c114); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; }
 
 .offers-box .offers-body .offer .details .title { margin: 0; }
+
+.offers-box .offers-body .offer .details .description { font-size: 14px; }
 
 .offers-box .offers-body .offer .details .title, .offers-box .offers-body .offer .details .description { color: white; }
 
@@ -1257,8 +1279,10 @@ strong { font-weight: inherit; }
   .offers-box .offers-body .offer { padding: 20px 40px; margin-bottom: 0; cursor: default; }
   .offers-box .offers-body .offer.show-details .details { opacity: 0; }
   .offers-box .offers-body .offer:hover .details { opacity: 1; }
+  .offers-box .offers-body .offer .details { padding: 30px 30px 20px; }
   .offers-box .offers-body .offer .details .button { cursor: pointer; border: none; font-weight: 500; }
-  .offers-box .offers-body .offer .details .button:hover { color: #353a3f; background: white; } }
+  .offers-box .offers-body .offer .details .button:hover { color: #353a3f; background: white; }
+  .offers-box .offers-body .offer .details .description { font-size: 17px; } }
 
 .advantages-box { margin: 50px 0; }
 
@@ -1391,17 +1415,17 @@ strong { font-weight: inherit; }
 
 .modal-box::before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: rgba(56, 56, 56, 0.56); }
 
-.modal-box.opened { z-index: 1000; opacity: 1; }
+.modal-box.opened { z-index: 9999; opacity: 1; }
 
 .modal-box .modal { position: relative; z-index: 9999; background-color: #f1f3f5; height: 100%; }
 
-.modal-box .modal .modal-head { position: relative; padding: 20px; background: #7ab800; height: 97px; }
-
-.modal-box .modal .modal-head .title { font-size: 25px; line-height: 2.28; color: #ffffff; margin: 0; }
-
-.modal-box .modal .modal-head .close-modal { position: absolute; top: -2px; right: 25px; width: 65px; height: 63px; border: 2px solid white; border-bottom-left-radius: 50%; border-bottom-right-radius: 50%; background: url("../images/close.svg") center no-repeat, transparent; background-size: 40%; }
-
 .modal-box .modal .modal-body { padding: 30px 20px; font-size: 17px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: 1.12; letter-spacing: normal; text-align: left; color: #343a40; overflow: scroll; height: calc(100% - 97px); }
+
+.application-head, .modal-head { position: relative; padding: 20px; background: #7ab800; height: 97px; overflow: hidden; }
+
+.application-head .title, .modal-head .title { font-size: 25px; line-height: 2.28; color: #ffffff; margin: 0; }
+
+.application-head .close-application, .application-head .close-modal, .modal-head .close-application, .modal-head .close-modal { position: absolute; top: -2px; right: 25px; width: 65px; height: 63px; border: 2px solid white; border-bottom-left-radius: 50%; border-bottom-right-radius: 50%; background: url("../images/close.svg") center no-repeat, transparent; background-size: 40%; }
 
 @media (min-width: 992px) { .modal-box .modal { box-shadow: 0px 38px 95.6px 35.4px rgba(64, 60, 60, 0.39); max-width: 720px; height: auto; max-height: 500px; border-radius: 10px; overflow: hidden; } }
 
@@ -1568,6 +1592,8 @@ strong { font-weight: inherit; }
 
 .dealer-form-box .dealer-form .form-block .form-block-body .input-group { display: block; max-width: 324px; }
 
+.dealer-form-box .dealer-form .form-block .form-block-body .input-group.file { width: 100%; max-width: none; }
+
 .dealer-form-box .dealer-form .description { font-size: 14px !important; }
 
 .dealer-form-box .dealer-form .checkbox-box { margin-top: 50px; padding-bottom: 15px; }
@@ -1587,5 +1613,54 @@ strong { font-weight: inherit; }
   .dealer-form-box .backgrounded { background-color: #f1f3f5; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; padding: 0 30px 1px; margin: 0 -25px 0; }
   .dealer-form-box .backgrounded .header-box { background-color: #f1f3f5; }
   .dealer-form-box .backgrounded .form-block .form-block-body { padding: 0; } }
+
+.floating-application-box { position: fixed; bottom: 0; left: -100%; right: -100%; z-index: 1000; height: 111px; }
+
+.floating-application-box .floating-application { border-radius: 0; }
+
+.floating-application-box .floating-application .upper-head { position: relative; height: 111px; display: flex; align-items: center; justify-content: center; padding: 20px; background-color: #7ab800; }
+
+.floating-application-box .floating-application .upper-head::before { content: ""; background: url("../images/hand-slide-white.png") center no-repeat, #7ab800; background-size: 50%; border-radius: 50%; display: block; height: 50px; width: 50px; position: absolute; z-index: 1001; top: -25px; right: 30px; }
+
+.application-body-box { position: fixed; z-index: -1; opacity: 0; top: 0; bottom: 0; left: 0; right: 0; background: #7ab800; }
+
+.application-body-box .application-body { background-color: #f1f3f5; padding: 25px 25px 30px; height: calc(100% - 97px); overflow-y: scroll; }
+
+.application-body-box .application-body .checkbox-box { margin-top: 20px; margin-bottom: 20px; }
+
+.application-body-box.opened { z-index: 1111; opacity: 1; }
+
+.application-body-box .dots { display: none; }
+
+.application-body-box .button { color: white; border-color: #7ab800; background-color: #7ab800; }
+
+.form-logo { display: none; }
+
+@media (min-width: 992px) { .floating-application-box { display: none; }
+  .form-logo { display: block; height: 34px; width: auto; }
+  .application-body-box { z-index: 1111; opacity: 1; top: 0; bottom: auto; height: 105px; display: flex; justify-content: center; background-image: linear-gradient(to top, #7ab800, #559301); }
+  .application-body-box .application-head { display: none; }
+  .application-body-box .application-body { padding: 0; height: auto; overflow-y: auto; background: none; background-image: linear-gradient(to right, #7ab800, transparent); padding-left: 35px; border-top-left-radius: 52.5px; border-bottom-left-radius: 52.5px; width: 1280px; height: 100%; }
+  .application-body-box .application-body form { height: 100%; }
+  .application-body-box .application-body .application-form-body { height: 100%; display: flex; align-items: center; justify-content: flex-start; }
+  .application-body-box .application-body .application-form-body .checkbox-box { display: none; }
+  .application-body-box .application-body .application-form-body .input-group, .application-body-box .application-body .application-form-body .phone-country-code, .application-body-box .application-body .application-form-body .phone-input, .application-body-box .application-body .application-form-body .input { height: 44px; margin: 0; font-size: 15px; }
+  .application-body-box .application-body .application-form-body .input { padding-left: 10px; padding-top: 17px; padding-bottom: 14px; }
+  .application-body-box .application-body .application-form-body .phone-country-code { width: 40px; }
+  .application-body-box .application-body .application-form-body .phone-input .input { padding-left: 45px; }
+  .application-body-box .application-body .application-form-body .money-box { flex-shrink: 0; flex-basis: 130px; margin-right: 15px; }
+  .application-body-box .application-body .application-form-body .month-box { flex-shrink: 0; flex-basis: 100px; }
+  .application-body-box .application-body .application-form-body .usual-box { flex-shrink: 0; flex-grow: 1; flex-basis: 150px; }
+  .application-body-box .application-body .application-form-body .usual-box .input { padding-right: 10px; }
+  .application-body-box .application-body .application-form-body .usual-box .input::-webkit-input-placeholder { font-weight: normal; }
+  .application-body-box .application-body .application-form-body .usual-box .input::-moz-placeholder { font-weight: normal; }
+  .application-body-box .application-body .application-form-body .usual-box .input:-ms-input-placeholder { font-weight: normal; }
+  .application-body-box .application-body .application-form-body .usual-box .input::-ms-input-placeholder { font-weight: normal; }
+  .application-body-box .application-body .application-form-body .usual-box .input::placeholder { font-weight: normal; }
+  .application-body-box .application-body .application-form-body .usual-box:not(.no-margin) { margin-right: 15px; flex-basis: 138px; flex-grow: 0; }
+  .application-body-box .application-body .application-form-body .button-box { flex-shrink: 0; width: 219px; }
+  .application-body-box .application-body .application-form-body .button-box .button { border: solid 3px #ffffff; padding: 13px; }
+  .application-body-box .application-body .application-form-body .input-with-label .input { padding-right: 30px; }
+  .application-body-box .application-body .dots { display: flex; } }
 
 body { font-family: "Rubik", sans-serif; font-size: 15px; font-size: 13px; }

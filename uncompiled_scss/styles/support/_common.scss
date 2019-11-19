@@ -69,6 +69,11 @@
       background-image: url("../images/cellphone-white.svg");
     }
   }
+
+  &.point {
+    background-image: url("../images/point.svg");
+    padding-left: 35px;
+  }
 }
 
 .space-between {

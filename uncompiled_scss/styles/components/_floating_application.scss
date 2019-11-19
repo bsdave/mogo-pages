@@ -1,10 +1,23 @@
 .floating-application-box {
   position: fixed;
-  bottom: 0;
+  bottom: -138px;
   left: -100%;
   right: -100%;
   z-index: 1000;
   height: 111px;
+
+  transition: 300ms;
+
+  &.visible {
+    bottom: 0;
+    .floating-application {
+      box-shadow: 0px -20px 20px 9px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &.opacity {
+    opacity: 0;
+  }
 
   .floating-application {
     border-radius: 0;
@@ -57,6 +70,34 @@
       margin-top: 20px;
       margin-bottom: 20px;
     }
+
+    .application-form-body {
+      position: relative;
+      &.received {
+        .success-received-img {
+          &::before {
+            content: url("../images/check_green.svg");
+            display: block;
+
+            height: 44px;
+            width: 57px;
+          }
+        }
+
+        .application-received-box {
+          margin: 40px 0;
+
+          .title {
+            font-size: 17px;
+            font-weight: bold;
+            line-height: 1.12;
+            color: #343a40;
+            text-transform: uppercase;
+            margin-top: 0;
+          }
+        }
+      }
+    }
   }
 
   &.opened {
@@ -93,9 +134,61 @@
   .application-body-box {
     z-index: 1111;
     opacity: 1;
-    top: 0;
+    top: -120px;
     bottom: auto;
     height: 105px;
+
+    transition: 300ms;
+
+    &.force-hide {
+      top: -300px !important;
+    }
+
+    &.visible {
+      top: 0;
+      box-shadow: #f1f3f5;
+      box-shadow: 0px 20px 20px 9px rgba(0, 0, 0, 0.3);
+
+      .application-body {
+        position: relative;
+        overflow: visible;
+
+        .close-application-body {
+          cursor: pointer;
+          position: absolute;
+          right: -26px;
+          bottom: -26px;
+
+          display: block;
+          height: 52px;
+          width: 52px;
+
+          background: #7ab800;
+          border-radius: 50%;
+
+          &::after {
+            content: "";
+            display: inline-block;
+            height: 36px;
+            width: 36px;
+
+            margin: 8px;
+
+            border-radius: 50%;
+            border: solid 2px #ffffff;
+
+            background: url("../images/close.svg") 7px 8px no-repeat;
+            background-size: 50%;
+          }
+
+          transition: 300ms;
+          &:hover {
+            background: #84c10c;
+          }
+        }
+
+      }
+    }
 
     display: flex;
     justify-content: center;
@@ -181,7 +274,7 @@
               font-weight: normal;
             }
           }
-          
+
           &:not(.no-margin) {
             margin-right: 15px;
             flex-basis: 138px;
@@ -204,10 +297,33 @@
             padding-right: 30px;
           }
         }
-      }
 
-      .dots {
-        display: flex;
+        &.received {
+          .success-received-img {
+            &::before {
+              content: url("../images/check.svg");
+              display: block;
+
+              height: 44px;
+              width: 57px;
+            }
+          }
+
+          .application-received-box {
+            margin: 20px;
+            .title {
+              margin-bottom: 10px;
+              color: #ffffff;
+            }
+            .description {
+              margin: 0;
+              color: #ffffff;
+            }
+          }
+        }
+        .dots {
+          display: flex;
+        }
       }
     }
   }

@@ -849,6 +849,8 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .with-badge.cellphone.white { background-image: url("../images/cellphone-white.svg"); }
 
+.with-badge.point { background-image: url("../images/point.svg"); padding-left: 35px; }
+
 .space-between { display: flex; align-items: center; }
 
 .align-center { align-items: center; }
@@ -1458,7 +1460,7 @@ strong { font-weight: inherit; }
 .benefits-box .benefits-body .benefits .benefit .conditions .condition::before { position: absolute; content: ""; top: calc((100% - 19px) / 2); left: 0; height: 19px; width: 24px; background-image: url("../images/check_green.svg"); background-position: center; background-repeat: no-repeat; }
 
 @media (min-width: 992px) { .benefits-box .benefits-head { margin: 50px 0; }
-  .benefits-box .benefits-body .benefits .benefit .benefit-img { max-width: 60px; max-height: 60px; margin-bottom: 10px; }
+  .benefits-box .benefits-body .benefits .benefit .benefit-img { max-width: 50px; max-height: 50px; height: 50px; margin-bottom: 10px; }
   .benefits-box .benefits-body .benefits .benefit .title { font-size: 17px; }
   .benefits-box .benefits-body .benefits .benefit .conditions { padding-right: 0; margin-top: 40px; padding-right: 20%; }
   .benefits-box .benefits-body .benefits .benefit .conditions .condition { color: #353a3f; }
@@ -1614,7 +1616,13 @@ strong { font-weight: inherit; }
   .dealer-form-box .backgrounded .header-box { background-color: #f1f3f5; }
   .dealer-form-box .backgrounded .form-block .form-block-body { padding: 0; } }
 
-.floating-application-box { position: fixed; bottom: 0; left: -100%; right: -100%; z-index: 1000; height: 111px; }
+.floating-application-box { position: fixed; bottom: -138px; left: -100%; right: -100%; z-index: 1000; height: 111px; transition: 300ms; }
+
+.floating-application-box.visible { bottom: 0; }
+
+.floating-application-box.visible .floating-application { box-shadow: 0px -20px 20px 9px rgba(0, 0, 0, 0.3); }
+
+.floating-application-box.opacity { opacity: 0; }
 
 .floating-application-box .floating-application { border-radius: 0; }
 
@@ -1628,6 +1636,14 @@ strong { font-weight: inherit; }
 
 .application-body-box .application-body .checkbox-box { margin-top: 20px; margin-bottom: 20px; }
 
+.application-body-box .application-body .application-form-body { position: relative; }
+
+.application-body-box .application-body .application-form-body.received .success-received-img::before { content: url("../images/check_green.svg"); display: block; height: 44px; width: 57px; }
+
+.application-body-box .application-body .application-form-body.received .application-received-box { margin: 40px 0; }
+
+.application-body-box .application-body .application-form-body.received .application-received-box .title { font-size: 17px; font-weight: bold; line-height: 1.12; color: #343a40; text-transform: uppercase; margin-top: 0; }
+
 .application-body-box.opened { z-index: 1111; opacity: 1; }
 
 .application-body-box .dots { display: none; }
@@ -1638,7 +1654,13 @@ strong { font-weight: inherit; }
 
 @media (min-width: 992px) { .floating-application-box { display: none; }
   .form-logo { display: block; height: 34px; width: auto; }
-  .application-body-box { z-index: 1111; opacity: 1; top: 0; bottom: auto; height: 105px; display: flex; justify-content: center; background-image: linear-gradient(to top, #7ab800, #559301); }
+  .application-body-box { z-index: 1111; opacity: 1; top: -120px; bottom: auto; height: 105px; transition: 300ms; display: flex; justify-content: center; background-image: linear-gradient(to top, #7ab800, #559301); }
+  .application-body-box.force-hide { top: -300px !important; }
+  .application-body-box.visible { top: 0; box-shadow: #f1f3f5; box-shadow: 0px 20px 20px 9px rgba(0, 0, 0, 0.3); }
+  .application-body-box.visible .application-body { position: relative; overflow: visible; }
+  .application-body-box.visible .application-body .close-application-body { cursor: pointer; position: absolute; right: -26px; bottom: -26px; display: block; height: 52px; width: 52px; background: #7ab800; border-radius: 50%; transition: 300ms; }
+  .application-body-box.visible .application-body .close-application-body::after { content: ""; display: inline-block; height: 36px; width: 36px; margin: 8px; border-radius: 50%; border: solid 2px #ffffff; background: url("../images/close.svg") 7px 8px no-repeat; background-size: 50%; }
+  .application-body-box.visible .application-body .close-application-body:hover { background: #84c10c; }
   .application-body-box .application-head { display: none; }
   .application-body-box .application-body { padding: 0; height: auto; overflow-y: auto; background: none; background-image: linear-gradient(to right, #7ab800, transparent); padding-left: 35px; border-top-left-radius: 52.5px; border-bottom-left-radius: 52.5px; width: 1280px; height: 100%; }
   .application-body-box .application-body form { height: 100%; }
@@ -1661,6 +1683,10 @@ strong { font-weight: inherit; }
   .application-body-box .application-body .application-form-body .button-box { flex-shrink: 0; width: 219px; }
   .application-body-box .application-body .application-form-body .button-box .button { border: solid 3px #ffffff; padding: 13px; }
   .application-body-box .application-body .application-form-body .input-with-label .input { padding-right: 30px; }
-  .application-body-box .application-body .dots { display: flex; } }
+  .application-body-box .application-body .application-form-body.received .success-received-img::before { content: url("../images/check.svg"); display: block; height: 44px; width: 57px; }
+  .application-body-box .application-body .application-form-body.received .application-received-box { margin: 20px; }
+  .application-body-box .application-body .application-form-body.received .application-received-box .title { margin-bottom: 10px; color: #ffffff; }
+  .application-body-box .application-body .application-form-body.received .application-received-box .description { margin: 0; color: #ffffff; }
+  .application-body-box .application-body .application-form-body .dots { display: flex; } }
 
 body { font-family: "Rubik", sans-serif; font-size: 15px; font-size: 13px; }

@@ -1,20 +1,7 @@
 $(function () {
   $('html').addClass('js');
 
-  $('#open-dropdown-menu').click(function () {
-    $(this).toggleClass('is-active');
-    $('.navigation-menu.dropdown').toggleClass('is-opened');
-  });
-
-  $('#recall-menu-toggle').click(function () {
-    $(this).toggleClass('is-active');
-    $('.recall-menu').toggleClass('is-opened');
-  });
-
-  $('#languages-menu-toggle').click(function () {
-    $(this).toggleClass('is-active');
-    $('.languages-menu').toggleClass('is-opened');
-  });
+  initializeTogglers();
 
   $('.offer').click(function () {
     $(this).toggleClass('show-details');
@@ -37,7 +24,11 @@ $(function () {
   });
 
   $('input[type=radio][name=application-type]').change(function () {
-    $('.downpayment-input-block').toggle(400);
+    if ($(this).val() == 'leaseback') {
+      $('.downpayment-input-block').fadeOut(400);
+    } else {
+      $('.downpayment-input-block').fadeIn(400);
+    }
   });
 
   $('.carousel').slick({
@@ -112,3 +103,26 @@ $(function () {
     };
   });
 });
+
+const initializeTogglers = () => {
+  const allTogglers = {
+    '#open-dropdown-menu': '.navigation-menu.dropdown',
+    '#recall-menu-toggle': '.recall-menu',
+    '#languages-menu-toggle': '.languages-menu'
+  }
+  const allTogglersIds = Object.keys(allTogglers);
+
+  for (const [key, value] of Object.entries(allTogglers)) {
+    let allExceptCurrent = allTogglersIds.filter(v => v !== key);
+
+    $(key).click(function () {
+      $(this).toggleClass('is-active');
+      $(value).toggleClass('is-opened');
+
+      for (const [_, elementId] of Object.entries(allExceptCurrent)) {
+        $(elementId).removeClass('is-active');
+        $(allTogglers[elementId]).removeClass('is-opened');
+      };
+    });
+  }
+};

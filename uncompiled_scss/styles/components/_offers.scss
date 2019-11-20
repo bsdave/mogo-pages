@@ -70,6 +70,45 @@
   }
 }
 
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .offers-box {
+    .offers-body {
+      .offer {
+        padding: 0;
+
+        .title {
+          font-size: 18px;
+        }
+        .button {
+          font-size: 15px;
+        }
+
+        .details {
+          padding: 12px;
+
+          .title {
+            display: none;
+          }
+
+          .description {
+            font-size: 14px;
+            margin: 0;
+          }
+
+          .title,
+          .description {
+            color: white;
+          }
+
+          .button {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @include desktop {
   .offers-box {
     margin-bottom: 100px;
@@ -106,6 +145,20 @@
             }
           }
 
+          .description {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .offers-box {
+    .offers-body {
+      .offer {
+        .details {
           .description {
             font-size: 17px;
           }

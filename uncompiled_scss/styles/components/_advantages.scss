@@ -16,6 +16,25 @@
   }
 }
 
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .advantages-box {
+    .advantages-body {
+      .common-title {
+        margin-top: 0;
+      }
+
+      .advantage {
+        padding: 0 25px 30px;
+
+        .description {
+          margin: 0;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
 @include desktop {
   .advantages-box {
     margin: 50px 0 120px;

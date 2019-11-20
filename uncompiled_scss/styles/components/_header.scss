@@ -13,9 +13,6 @@
         flex-grow: 0;
         flex-shrink: 0;
         margin-right: 30px;
-
-        .logo {
-        }
       }
 
       .navigation-menu {
@@ -248,17 +245,7 @@
           }
         }
 
-        .logo-box {
-          .logo {
-          }
-        }
-
         .navigation-menu {
-          .navigation-menu__item {
-            .menu-link {
-            }
-          }
-
           &.header-links {
             flex-grow: 1;
 
@@ -355,6 +342,14 @@
           margin-left: 15px;
         }
       }
+    }
+  }
+
+  a.recall-link {
+    transition: 300ms;
+
+    &:hover {
+      color: #7ab800;
     }
   }
 }

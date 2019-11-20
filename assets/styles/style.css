@@ -1105,7 +1105,9 @@ strong { font-weight: inherit; }
   .header-box .navigation-box .navigation .languages-menu.is-opened { top: 80px !important; }
   .header-box .navigation-box .navigation .languages-menu__toggle:hover, .header-box .navigation-box .navigation .recall-menu__toggle:hover { cursor: pointer; }
   .header-box .navigation-box .navigation .hidden-menu-box { margin-left: 25px; }
-  .header-box .navigation-box .navigation .recall-box { margin-left: 15px; } }
+  .header-box .navigation-box .navigation .recall-box { margin-left: 15px; }
+  a.recall-link { transition: 300ms; }
+  a.recall-link:hover { color: #7ab800; } }
 
 @media only screen and (min-width: 1200px) { .header-box .navigation-box .navigation .navigation-menu.header-links .navigation-menu__item { padding: 0 17px; } }
 
@@ -1180,6 +1182,9 @@ strong { font-weight: inherit; }
 .conditions .condition { position: relative; margin-bottom: 25px; font-size: 17px; line-height: 1.12; color: #ffffff; padding-left: 35px; }
 
 .conditions .condition::before { position: absolute; content: ""; top: 1px; left: 0; height: 19px; width: 24px; background-image: url("../images/check.svg"); background-position: center; background-repeat: no-repeat; }
+
+@media only screen and (min-width: 576px) and (max-width: 992px) { .first-screen-body .first-screen-slogan-body { padding: 0 25px; }
+  .first-screen-body .container { max-width: 100% !important; padding: 0 !important; } }
 
 @media (min-width: 992px) { .first-screen-box { background-image: url("../images/main_first_screen.jpg"); background-size: cover; background-position: 0 -122px; background-repeat: no-repeat; position: relative; z-index: 0; margin-bottom: 100px; }
   .first-screen-box.autocredit { background-image: url("../images/autocredit_first_screen_desktop.jpg"); background-size: cover; background-position: calc(55%) 0; }
@@ -1277,6 +1282,15 @@ strong { font-weight: inherit; }
 
 .offers-box .offers-body .offer.show-details .details { opacity: 1; }
 
+@media only screen and (min-width: 576px) and (max-width: 992px) { .offers-box .offers-body .offer { padding: 0; }
+  .offers-box .offers-body .offer .title { font-size: 18px; }
+  .offers-box .offers-body .offer .button { font-size: 15px; }
+  .offers-box .offers-body .offer .details { padding: 12px; }
+  .offers-box .offers-body .offer .details .title { display: none; }
+  .offers-box .offers-body .offer .details .description { font-size: 14px; margin: 0; }
+  .offers-box .offers-body .offer .details .title, .offers-box .offers-body .offer .details .description { color: white; }
+  .offers-box .offers-body .offer .details .button { font-size: 12px; } }
+
 @media (min-width: 992px) { .offers-box { margin-bottom: 100px; }
   .offers-box .offers-body .offer { padding: 20px 40px; margin-bottom: 0; cursor: default; }
   .offers-box .offers-body .offer.show-details .details { opacity: 0; }
@@ -1284,7 +1298,9 @@ strong { font-weight: inherit; }
   .offers-box .offers-body .offer .details { padding: 30px 30px 20px; }
   .offers-box .offers-body .offer .details .button { cursor: pointer; border: none; font-weight: 500; }
   .offers-box .offers-body .offer .details .button:hover { color: #353a3f; background: white; }
-  .offers-box .offers-body .offer .details .description { font-size: 17px; } }
+  .offers-box .offers-body .offer .details .description { font-size: 15px; } }
+
+@media screen and (min-width: 1220px) { .offers-box .offers-body .offer .details .description { font-size: 17px; } }
 
 .advantages-box { margin: 50px 0; }
 
@@ -1293,6 +1309,10 @@ strong { font-weight: inherit; }
 .advantages-box .advantages-body .advantage { padding: 10px 25px 30px; }
 
 .advantages-box .advantages-body .advantage .button { margin-top: 35px; }
+
+@media only screen and (min-width: 576px) and (max-width: 992px) { .advantages-box .advantages-body .common-title { margin-top: 0; }
+  .advantages-box .advantages-body .advantage { padding: 0 25px 30px; }
+  .advantages-box .advantages-body .advantage .description { margin: 0; font-size: 14px; } }
 
 @media (min-width: 992px) { .advantages-box { margin: 50px 0 120px; }
   .advantages-box .advantages-body { background-color: #f1f3f5; }
@@ -1340,8 +1360,8 @@ strong { font-weight: inherit; }
 
 @media (min-width: 992px) { .footer-box { padding: 70px 20px; }
   .footer-box .footer-body .footer-list.bordered { border-bottom: none; border-right: 1px solid #383d42; }
-  .footer-box .footer-body .footer-list .recall-link { transition: 300ms; }
-  .footer-box .footer-body .footer-list .recall-link:hover { color: #7ab800; }
+  .footer-box .footer-body .footer-list a.recall-link { transition: 300ms; }
+  .footer-box .footer-body .footer-list a.recall-link:hover { color: #7ab800; }
   .basement-box .basement-head { text-align: center; } }
 
 .autocredit-box { background-color: #f1f3f5; margin-bottom: 30px; }
@@ -1459,6 +1479,13 @@ strong { font-weight: inherit; }
 
 .benefits-box .benefits-body .benefits .benefit .conditions .condition::before { position: absolute; content: ""; top: calc((100% - 19px) / 2); left: 0; height: 19px; width: 24px; background-image: url("../images/check_green.svg"); background-position: center; background-repeat: no-repeat; }
 
+@media only screen and (min-width: 576px) and (max-width: 992px) { .benefits-box .benefits-head { margin: 50px 0; }
+  .benefits-box .benefits-body .benefits .benefit .benefit-img { max-width: 50px; max-height: 50px; height: 50px; margin-bottom: 10px; }
+  .benefits-box .benefits-body .benefits .benefit .title { font-size: 17px; }
+  .benefits-box .benefits-body .benefits .benefit .conditions { padding-right: 0; margin-top: 40px; padding-right: 20%; }
+  .benefits-box .benefits-body .benefits .benefit .conditions .condition { color: #353a3f; }
+  .benefits-box .benefits-body .benefits .benefit .conditions .condition::before { position: absolute; content: ""; top: calc((100% - 19px) / 2); left: 0; height: 19px; width: 24px; background-image: url("../images/check_green.svg"); background-position: center; background-repeat: no-repeat; } }
+
 @media (min-width: 992px) { .benefits-box .benefits-head { margin: 50px 0; }
   .benefits-box .benefits-body .benefits .benefit .benefit-img { max-width: 50px; max-height: 50px; height: 50px; margin-bottom: 10px; }
   .benefits-box .benefits-body .benefits .benefit .title { font-size: 17px; }
@@ -1567,6 +1594,9 @@ strong { font-weight: inherit; }
 
 .carousel-box .carousel .slick-dots button { background-color: white; }
 
+@media only screen and (min-width: 576px) and (max-width: 992px) { .carousel-box .container { max-width: 100%; padding: 0; }
+  .carousel-box .carousel { padding-bottom: 10px; } }
+
 @media (min-width: 992px) { .carousel-box { margin-bottom: 100px; }
   .carousel-box .carousel { background-color: #f1f3f5; }
   .carousel-box .carousel .step-box .step .step-left .img-block { height: 247px; width: 100%; -o-object-fit: cover; object-fit: cover; }
@@ -1609,6 +1639,10 @@ strong { font-weight: inherit; }
 .dealer-form-box .backgrounded .form-block .form-block-body { padding: 0; }
 
 .dealer-form-box .backgrounded .form-block .form-block-body .input-group { width: 100%; max-width: none; margin-bottom: 25px; }
+
+@media only screen and (min-width: 576px) and (max-width: 992px) { .dealer-form-box .dealer-form .header-box .title { font-size: 20px; }
+  .dealer-form-box .dealer-form .backgrounded { margin-top: 0; margin-left: -10px; }
+  .dealer-form-box .dealer-form .input-with-label { margin-left: 0; } }
 
 @media (min-width: 992px) { .dealer-form-box .dealer-form .form-block .form-block-body { padding-left: 50px; }
   .dealer-form-box .dealer-form .checkbox-box { border-top: 2px solid #dfe2e6; padding-top: 30px; }

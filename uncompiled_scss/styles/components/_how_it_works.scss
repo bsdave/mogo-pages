@@ -3,9 +3,6 @@
   margin-bottom: 100px;
 
   .how-it-works {
-    .how-it-works-head {
-    }
-
     .how-it-works-body {
       .how-it-work {
         position: relative;
@@ -91,9 +88,6 @@
 @include desktop {
   .how-it-works-box {
     .how-it-works {
-      .how-it-works-head {
-      }
-
       .how-it-works-body {
         .how-it-work {
           padding: 20px;
@@ -112,7 +106,6 @@
 
               border-bottom: 8px dotted #7ab800;
             }
-
           }
         }
       }

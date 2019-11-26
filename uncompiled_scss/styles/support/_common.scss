@@ -319,13 +319,15 @@
   align-items: center;
 }
 
-.open-modal.agreement {
-  display: inline-block;
-  width: 30px;
-  font-size: 17px;
-  line-height: 17px;
-  padding-bottom: 5px;
+.open-modal {
   cursor: pointer;
+  &.agreement {
+    display: inline-block;
+    width: 30px;
+    font-size: 17px;
+    line-height: 17px;
+    padding-bottom: 5px;
+  }
 }
 
 .horizontal-centered {

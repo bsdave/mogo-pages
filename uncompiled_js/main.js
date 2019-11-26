@@ -4,6 +4,7 @@ $(function () {
   $('html').addClass('js');
 
   initializeTogglers();
+  initializeRanges();
 
   $('.offer').click(function () {
     $(this).toggleClass('show-details');
@@ -50,16 +51,6 @@ $(function () {
     ]
   });
 
-  $('.range').on('input', function () {
-    const min = this.min;
-    const max = this.max - min;
-    const current = this.value - min;
-    const percentage = current * 100 / max;
-
-    $(this).css('background', `linear-gradient(90deg, #2b5099, #00979a, #78b801 ${percentage}%, #ced4da ${percentage}%, #ced4da 100%)`);
-    $(this).parents('.calculator-block').find('.input.money').val(this.value);
-  });
-
   $('.show-more').click(function () {
     $(this).parent().find('.hideable').fadeToggle("fast", "linear");
     const newText = $(this).data().toggleText;
@@ -71,7 +62,7 @@ $(function () {
     const floatingApplication = new Dragdealer('floating-application', {
       x: 0.5,
       steps: 3,
-      callback: function(x) {
+      callback: function (x) {
         if (x != 0.5) {
           $('.floating-application-box').addClass('opacity');
         }
@@ -128,3 +119,23 @@ const initializeTogglers = () => {
     });
   }
 };
+
+const initializeRanges = () => {
+  $('.range').each(function () {
+    recalculateRangeValue(this);
+  });
+
+  $('.range').on('input', function () {
+    recalculateRangeValue(this);
+  });
+};
+
+const recalculateRangeValue = (range) => {
+  const min = range.min;
+  const max = range.max - min;
+  const current = range.value - min;
+  const percentage = current * 100 / max;
+
+  $(range).css('background', `linear-gradient(90deg, #2b5099, #00979a, #78b801 ${percentage}%, #ced4da ${percentage}%, #ced4da 100%)`);
+  $(range).parents('.calculator-block').find('.input.money').val(range.value);
+}
